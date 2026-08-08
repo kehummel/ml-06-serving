@@ -276,3 +276,201 @@ dtype: int64
 2026-08-05 15:57:04 | INFO | M06 | github_actions=False
 2026-08-05 15:57:04 | INFO | M06 | Loading model from: artifacts\model.joblib
 2026-08-05 15:57:04 | ERROR | M06 | Model file not found: artifacts\model.joblib
+2026-08-05 16:41:03 | INFO | M06 | === RUN START ===
+2026-08-05 16:41:03 | INFO | M06 | project=M06
+2026-08-05 16:41:03 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-05 16:41:03 | INFO | M06 | python=3.14.3
+2026-08-05 16:41:03 | INFO | M06 | os=Windows 11
+2026-08-05 16:41:03 | INFO | M06 | shell=powershell
+2026-08-05 16:41:03 | INFO | M06 | cwd=.
+2026-08-05 16:41:03 | INFO | M06 | github_actions=False
+2026-08-05 16:41:03 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-05 16:41:03 | INFO | M06 | Model loaded successfully
+2026-08-05 16:41:03 | INFO | M06 | === RUN START ===
+2026-08-05 16:41:03 | INFO | M06 | project=M06
+2026-08-05 16:41:03 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-05 16:41:03 | INFO | M06 | python=3.14.3
+2026-08-05 16:41:03 | INFO | M06 | os=Windows 11
+2026-08-05 16:41:03 | INFO | M06 | shell=powershell
+2026-08-05 16:41:03 | INFO | M06 | cwd=.
+2026-08-05 16:41:03 | INFO | M06 | github_actions=False
+2026-08-05 16:41:03 | INFO | M06 | Confirming installation:
+2026-08-05 16:41:03 | INFO | M06 |   python:       3.14.3
+2026-08-05 16:41:03 | INFO | M06 |   pandas:       3.0.5
+2026-08-05 16:41:03 | INFO | M06 | Model artifact will be saved to: artifacts\model.joblib
+2026-08-05 16:41:13 | INFO | M06 | === RUN START ===
+2026-08-05 16:41:13 | INFO | M06 | project=M06
+2026-08-05 16:41:13 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-05 16:41:13 | INFO | M06 | python=3.14.3
+2026-08-05 16:41:13 | INFO | M06 | os=Windows 11
+2026-08-05 16:41:13 | INFO | M06 | shell=powershell
+2026-08-05 16:41:13 | INFO | M06 | cwd=.
+2026-08-05 16:41:13 | INFO | M06 | github_actions=False
+2026-08-05 16:41:13 | INFO | M06 | Confirming installation:
+2026-08-05 16:41:13 | INFO | M06 |   python:       3.14.3
+2026-08-05 16:41:13 | INFO | M06 |   pandas:       3.0.5
+2026-08-05 16:41:13 | INFO | M06 | Model artifact will be saved to: artifacts\model.joblib
+2026-08-05 16:41:13 | INFO | M06 | Loading dataset: penguins
+2026-08-05 16:41:13 | INFO | M06 | Loading dataset: penguins
+2026-08-05 16:41:13 | INFO | M06 | Loaded: 344 rows, 7 columns
+2026-08-05 16:41:13 | INFO | M06 | Model rows (after dropping missing): 342
+2026-08-05 16:41:13 | INFO | M06 | Model rows: 342
+2026-08-05 16:41:13 | INFO | M06 | Classes in 'species': ['Adelie', 'Chinstrap', 'Gentoo']
+2026-08-05 16:41:13 | INFO | M06 | Train instances: 273
+2026-08-05 16:41:13 | INFO | M06 | Test instances:  69
+2026-08-05 16:41:13 | INFO | M06 | Train instances: 273
+2026-08-05 16:41:13 | INFO | M06 | Test instances:  69
+2026-08-05 16:41:13 | INFO | M06 | Training RandomForestClassifier on 273 instances
+2026-08-05 16:41:14 | INFO | M06 | Training complete
+2026-08-05 16:41:14 | INFO | M06 | Saved model to: artifacts\model.joblib
+2026-08-05 16:41:14 | INFO | M06 | Reloaded model from: artifacts\model.joblib
+2026-08-05 16:41:14 | INFO | M06 | Valid payload -> {'prediction': 'Chinstrap'}
+2026-08-05 16:41:14 | INFO | M06 | Invalid payload handled cleanly -> ValueError: Missing required feature: 'bill_depth_mm'
+2026-08-05 16:41:14 | INFO | M06 | ========================
+2026-08-05 16:41:14 | INFO | M06 | SUMMARY
+2026-08-05 16:41:14 | INFO | M06 | ========================
+2026-08-05 16:41:14 | INFO | M06 | Dataset:  penguins
+2026-08-05 16:41:14 | INFO | M06 | Target:   species
+2026-08-05 16:41:14 | INFO | M06 | Features: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']
+2026-08-05 16:41:14 | INFO | M06 | Artifact: artifacts\model.joblib
+2026-08-05 16:41:14 | INFO | M06 | ========================
+2026-08-07 17:39:35 | INFO | M06 | === RUN START ===
+2026-08-07 17:39:35 | INFO | M06 | project=M06
+2026-08-07 17:39:35 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 17:39:35 | INFO | M06 | python=3.14.3
+2026-08-07 17:39:35 | INFO | M06 | os=Windows 11
+2026-08-07 17:39:35 | INFO | M06 | shell=powershell
+2026-08-07 17:39:35 | INFO | M06 | cwd=.
+2026-08-07 17:39:35 | INFO | M06 | github_actions=False
+2026-08-07 17:39:35 | INFO | M06 | Load data.................
+2026-08-07 17:39:35 | INFO | M06 | Loading dataset: penguins
+2026-08-07 17:39:35 | INFO | M06 | Loaded: 344 rows, 7 columns
+2026-08-07 17:39:35 | INFO | M06 | Model rows (after dropping missing): 333
+2026-08-07 17:39:35 | INFO | M06 | Split data................
+2026-08-07 17:39:35 | INFO | M06 | Train instances: 266
+2026-08-07 17:39:35 | INFO | M06 | Test instances:  67
+2026-08-07 17:39:35 | INFO | M06 | Train model...............
+2026-08-07 17:39:35 | INFO | M06 | Training RandomForestClassifier on 266 instances
+2026-08-07 17:39:36 | INFO | M06 | Training complete
+2026-08-07 17:39:36 | INFO | M06 | Evaluate model............
+2026-08-07 17:39:36 | INFO | M06 | Test accuracy: 0.896
+2026-08-07 17:39:36 | INFO | M06 | Save model................
+2026-08-07 17:39:36 | INFO | M06 | Saved model to: artifacts\model.joblib
+2026-08-07 17:39:36 | INFO | M06 | Summarize.................
+2026-08-07 17:39:36 | INFO | M06 | ========================
+2026-08-07 17:39:36 | INFO | M06 | SUMMARY
+2026-08-07 17:39:36 | INFO | M06 | ========================
+2026-08-07 17:39:36 | INFO | M06 | Dataset:  penguins
+2026-08-07 17:39:36 | INFO | M06 | Target:   sex
+2026-08-07 17:39:36 | INFO | M06 | Features: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']
+2026-08-07 17:39:36 | INFO | M06 | Artifact: artifacts\model.joblib
+2026-08-07 17:39:36 | INFO | M06 | ========================
+2026-08-07 17:39:36 | INFO | M06 | ========================
+2026-08-07 17:39:36 | INFO | M06 | Executed successfully!
+2026-08-07 17:39:36 | INFO | M06 | ========================
+2026-08-07 17:53:54 | INFO | M06 | === RUN START ===
+2026-08-07 17:53:54 | INFO | M06 | project=M06
+2026-08-07 17:53:54 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 17:53:54 | INFO | M06 | python=3.14.3
+2026-08-07 17:53:54 | INFO | M06 | os=Windows 11
+2026-08-07 17:53:54 | INFO | M06 | shell=powershell
+2026-08-07 17:53:54 | INFO | M06 | cwd=.
+2026-08-07 17:53:54 | INFO | M06 | github_actions=False
+2026-08-07 17:53:54 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 17:53:54 | INFO | M06 | Model loaded successfully
+2026-08-07 17:53:58 | INFO | M06 | === RUN START ===
+2026-08-07 17:53:58 | INFO | M06 | project=M06
+2026-08-07 17:53:58 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 17:53:58 | INFO | M06 | python=3.14.3
+2026-08-07 17:53:58 | INFO | M06 | os=Windows 11
+2026-08-07 17:53:58 | INFO | M06 | shell=powershell
+2026-08-07 17:53:58 | INFO | M06 | cwd=.
+2026-08-07 17:53:58 | INFO | M06 | github_actions=False
+2026-08-07 17:53:58 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 17:53:59 | INFO | M06 | Model loaded successfully
+2026-08-07 18:05:10 | INFO | M06 | === RUN START ===
+2026-08-07 18:05:10 | INFO | M06 | project=M06
+2026-08-07 18:05:10 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 18:05:10 | INFO | M06 | python=3.14.3
+2026-08-07 18:05:10 | INFO | M06 | os=Windows 11
+2026-08-07 18:05:10 | INFO | M06 | shell=powershell
+2026-08-07 18:05:10 | INFO | M06 | cwd=notebooks
+2026-08-07 18:05:10 | INFO | M06 | github_actions=False
+2026-08-07 18:05:11 | INFO | M06 | === RUN START ===
+2026-08-07 18:05:11 | INFO | M06 | project=M06
+2026-08-07 18:05:11 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 18:05:11 | INFO | M06 | python=3.14.3
+2026-08-07 18:05:11 | INFO | M06 | os=Windows 11
+2026-08-07 18:05:11 | INFO | M06 | shell=powershell
+2026-08-07 18:05:11 | INFO | M06 | cwd=.
+2026-08-07 18:05:11 | INFO | M06 | github_actions=False
+2026-08-07 18:05:11 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 18:05:11 | INFO | M06 | Model loaded successfully
+2026-08-07 18:05:11 | INFO | M06 | === RUN START ===
+2026-08-07 18:05:11 | INFO | M06 | project=M06
+2026-08-07 18:05:11 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 18:05:11 | INFO | M06 | python=3.14.3
+2026-08-07 18:05:11 | INFO | M06 | os=Windows 11
+2026-08-07 18:05:11 | INFO | M06 | shell=powershell
+2026-08-07 18:05:11 | INFO | M06 | cwd=.
+2026-08-07 18:05:11 | INFO | M06 | github_actions=False
+2026-08-07 18:05:11 | INFO | M06 | Confirming installation:
+2026-08-07 18:05:11 | INFO | M06 |   python:       3.14.3
+2026-08-07 18:05:11 | INFO | M06 |   pandas:       3.0.5
+2026-08-07 18:05:11 | INFO | M06 | Model artifact will be saved to: artifacts\model.joblib
+2026-08-07 18:05:37 | INFO | M06 | Loading dataset: penguins
+2026-08-07 18:05:37 | INFO | M06 | Loading dataset: penguins
+2026-08-07 18:05:37 | INFO | M06 | Loaded: 344 rows, 7 columns
+2026-08-07 18:05:38 | INFO | M06 | Model rows (after dropping missing): 333
+2026-08-07 18:05:38 | INFO | M06 | Model rows: 333
+2026-08-07 18:05:38 | INFO | M06 | Classes in 'sex': ['Female', 'Male']
+2026-08-07 18:05:44 | INFO | M06 | Train instances: 266
+2026-08-07 18:05:44 | INFO | M06 | Test instances:  67
+2026-08-07 18:05:44 | INFO | M06 | Train instances: 266
+2026-08-07 18:05:44 | INFO | M06 | Test instances:  67
+2026-08-07 18:05:49 | INFO | M06 | Training RandomForestClassifier on 266 instances
+2026-08-07 18:05:50 | INFO | M06 | Training complete
+2026-08-07 18:05:50 | INFO | M06 | Saved model to: artifacts\model.joblib
+2026-08-07 18:05:50 | INFO | M06 | Reloaded model from: artifacts\model.joblib
+2026-08-07 18:05:57 | INFO | M06 | Valid payload -> {'prediction': 'Female'}
+2026-08-07 18:05:57 | INFO | M06 | Invalid payload handled cleanly -> ValueError: Missing required feature: 'bill_depth_mm'
+2026-08-07 18:07:24 | INFO | M06 | ========================
+2026-08-07 18:07:24 | INFO | M06 | SUMMARY
+2026-08-07 18:07:24 | INFO | M06 | ========================
+2026-08-07 18:07:24 | INFO | M06 | Dataset:  penguins
+2026-08-07 18:07:24 | INFO | M06 | Target:   sex
+2026-08-07 18:07:24 | INFO | M06 | Features: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']
+2026-08-07 18:07:24 | INFO | M06 | Artifact: artifacts\model.joblib
+2026-08-07 18:07:24 | INFO | M06 | ========================
+2026-08-07 19:57:45 | INFO | M06 | === RUN START ===
+2026-08-07 19:57:45 | INFO | M06 | project=M06
+2026-08-07 19:57:45 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 19:57:45 | INFO | M06 | python=3.14.3
+2026-08-07 19:57:46 | INFO | M06 | os=Windows 11
+2026-08-07 19:57:46 | INFO | M06 | shell=powershell
+2026-08-07 19:57:46 | INFO | M06 | cwd=.
+2026-08-07 19:57:46 | INFO | M06 | github_actions=False
+2026-08-07 19:57:46 | INFO | M06 | === RUN START ===
+2026-08-07 19:57:46 | INFO | M06 | project=M06
+2026-08-07 19:57:46 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 19:57:46 | INFO | M06 | python=3.14.3
+2026-08-07 19:57:46 | INFO | M06 | os=Windows 11
+2026-08-07 19:57:46 | INFO | M06 | shell=powershell
+2026-08-07 19:57:46 | INFO | M06 | cwd=.
+2026-08-07 19:57:46 | INFO | M06 | github_actions=False
+2026-08-07 19:57:46 | INFO | M06 | Confirming installation:
+2026-08-07 19:57:46 | INFO | M06 |   python:       3.14.3
+2026-08-07 19:57:46 | INFO | M06 |   pandas:       3.0.5
+2026-08-07 19:57:46 | INFO | M06 | Model artifact will be saved to: artifacts\model.joblib
+2026-08-07 20:01:31 | INFO | M06 | === RUN START ===
+2026-08-07 20:01:31 | INFO | M06 | project=M06
+2026-08-07 20:01:31 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:01:31 | INFO | M06 | python=3.14.3
+2026-08-07 20:01:31 | INFO | M06 | os=Windows 11
+2026-08-07 20:01:31 | INFO | M06 | shell=powershell
+2026-08-07 20:01:31 | INFO | M06 | cwd=.
+2026-08-07 20:01:31 | INFO | M06 | github_actions=False
+2026-08-07 20:01:31 | INFO | M06 | Confirming installation:
+2026-08-07 20:01:31 | INFO | M06 |   python:       3.14.3
+2026-08-07 20:01:31 | INFO | M06 |   pandas:       3.0.5
+2026-08-07 20:01:31 | INFO | M06 | Model artifact will be saved to: artifacts\model.joblib

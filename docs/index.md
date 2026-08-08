@@ -30,19 +30,14 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+I changed the target from 'species' to 'sex' of the penguins.
+I chose that change because phase 4 is supposed to be a small technical change to make sure we can make a change and run the scripts correctly.
+This was a simple change that would definitely give me a different output or prediction, making it easy to see if my modification had worked or not.
 
-Include:
+I tested the technical change with two different keys and they both returned a gender instead of a species.
 
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
-
-Compared with the example project,
-explain what is different and why the change matters.
-
-Was it easy, or surprisingly challenging and why do you think so?
+This was an easy change and it only required me to change a few lines in the code.
+It was simple and allowed me to better understand the code and what was happening in the project.
 
 ## Phase 5. Custom Project
 
