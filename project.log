@@ -474,3 +474,2308 @@ dtype: int64
 2026-08-07 20:01:31 | INFO | M06 |   python:       3.14.3
 2026-08-07 20:01:31 | INFO | M06 |   pandas:       3.0.5
 2026-08-07 20:01:31 | INFO | M06 | Model artifact will be saved to: artifacts\model.joblib
+2026-08-07 20:16:51 | INFO | M05 | === RUN START ===
+2026-08-07 20:16:51 | INFO | M05 | project=M05
+2026-08-07 20:16:51 | INFO | M05 | repo_dir=ml-06-serving
+2026-08-07 20:16:51 | INFO | M05 | python=3.14.3
+2026-08-07 20:16:51 | INFO | M05 | os=Windows 11
+2026-08-07 20:16:51 | INFO | M05 | shell=powershell
+2026-08-07 20:16:51 | INFO | M05 | cwd=project06
+2026-08-07 20:16:51 | INFO | M05 | github_actions=False
+2026-08-07 20:16:51 | INFO | M05 | Confirming installation:
+2026-08-07 20:16:51 | INFO | M05 |   python:       3.14.3
+2026-08-07 20:16:51 | INFO | M05 |   pandas:       3.0.5
+2026-08-07 20:16:51 | INFO | M05 |   numpy:        2.5.1
+2026-08-07 20:16:51 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-07 20:16:51 | INFO | M05 |   seaborn:      0.13.2
+2026-08-07 20:16:51 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-07 20:31:15 | INFO | M05 | Loading dataset: diabetes_data.csv
+2026-08-07 20:31:15 | INFO | M05 | Loaded: 768 rows (instances), 9 columns
+2026-08-07 20:31:15 | INFO | M05 | Original rows: 768
+2026-08-07 20:31:15 | INFO | M05 | Model rows:    768
+2026-08-07 20:31:15 | INFO | M05 | Classes in target 'outcome': [np.int64(0), np.int64(1)]
+2026-08-07 20:31:15 | DEBUG | M05 | Class counts:
+outcome
+0    500
+1    268
+Name: count, dtype: int64
+2026-08-07 20:32:53 | INFO | M05 | Loading dataset: diabetes_data.csv
+2026-08-07 20:32:53 | INFO | M05 | Loaded: 768 rows (instances), 9 columns
+2026-08-07 20:32:53 | INFO | M05 | Original rows: 768
+2026-08-07 20:32:53 | INFO | M05 | Model rows:    768
+2026-08-07 20:32:53 | INFO | M05 | Classes in target 'outcome': [np.int64(0), np.int64(1)]
+2026-08-07 20:32:53 | DEBUG | M05 | Class counts:
+outcome
+0    500
+1    268
+Name: count, dtype: int64
+2026-08-07 20:34:35 | INFO | M05 | Train instances: 614
+2026-08-07 20:34:35 | INFO | M05 | Test instances: 154
+2026-08-07 20:35:40 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-07 20:35:40 | DEBUG | M05 |   fitted: single_tree
+2026-08-07 20:35:41 | DEBUG | M05 |   fitted: random_forest
+2026-08-07 20:36:18 | INFO | M05 |   single_tree        test accuracy = 0.799
+2026-08-07 20:36:18 | INFO | M05 |   random_forest      test accuracy = 0.760
+2026-08-07 20:36:19 | INFO | M05 | Best model: single_tree with test accuracy = 0.799
+2026-08-07 20:36:47 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-07 20:36:47 | DEBUG | M05 |   fitted: single_tree
+2026-08-07 20:36:47 | DEBUG | M05 |   fitted: random_forest
+2026-08-07 20:36:49 | INFO | M05 |   single_tree        test accuracy = 0.695
+2026-08-07 20:36:49 | INFO | M05 |   random_forest      test accuracy = 0.760
+2026-08-07 20:36:50 | INFO | M05 | Best model: random_forest with test accuracy = 0.760
+2026-08-07 20:37:07 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-07 20:37:07 | DEBUG | M05 |   fitted: single_tree
+2026-08-07 20:37:08 | DEBUG | M05 |   fitted: random_forest
+2026-08-07 20:37:13 | INFO | M05 |   single_tree        test accuracy = 0.695
+2026-08-07 20:37:13 | INFO | M05 |   random_forest      test accuracy = 0.760
+2026-08-07 20:37:13 | INFO | M05 | Best model: random_forest with test accuracy = 0.760
+2026-08-07 20:44:43 | INFO | M05 | === RUN START ===
+2026-08-07 20:44:43 | INFO | M05 | project=M05
+2026-08-07 20:44:43 | INFO | M05 | repo_dir=ml-06-serving
+2026-08-07 20:44:43 | INFO | M05 | python=3.14.3
+2026-08-07 20:44:43 | INFO | M05 | os=Windows 11
+2026-08-07 20:44:43 | INFO | M05 | shell=powershell
+2026-08-07 20:44:43 | INFO | M05 | cwd=project06
+2026-08-07 20:44:43 | INFO | M05 | github_actions=False
+2026-08-07 20:44:43 | INFO | M05 | Confirming installation:
+2026-08-07 20:44:43 | INFO | M05 |   python:       3.14.3
+2026-08-07 20:44:43 | INFO | M05 |   pandas:       3.0.5
+2026-08-07 20:44:43 | INFO | M05 |   numpy:        2.5.1
+2026-08-07 20:44:43 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-07 20:44:43 | INFO | M05 |   seaborn:      0.13.2
+2026-08-07 20:44:43 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-07 20:44:49 | INFO | M05 | Loading dataset: diabetes_data.csv
+2026-08-07 20:44:49 | INFO | M05 | Loaded: 768 rows (instances), 9 columns
+2026-08-07 20:44:49 | INFO | M05 | Original rows: 768
+2026-08-07 20:44:49 | INFO | M05 | Model rows:    768
+2026-08-07 20:44:49 | INFO | M05 | Classes in target 'outcome': [np.int64(0), np.int64(1)]
+2026-08-07 20:44:49 | DEBUG | M05 | Class counts:
+outcome
+0    500
+1    268
+Name: count, dtype: int64
+2026-08-07 20:44:54 | INFO | M05 | Train instances: 614
+2026-08-07 20:44:54 | INFO | M05 | Test instances: 154
+2026-08-07 20:45:43 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-07 20:45:43 | DEBUG | M05 |   fitted: single_tree
+2026-08-07 20:45:43 | DEBUG | M05 |   fitted: random_forest
+2026-08-07 20:45:44 | DEBUG | M05 |   fitted: voting classifier
+2026-08-07 20:48:35 | INFO | M05 |   single_tree        test accuracy = 0.695
+2026-08-07 20:48:35 | INFO | M05 |   random_forest      test accuracy = 0.760
+2026-08-07 20:48:35 | INFO | M05 |   voting_classifier  test accuracy = 0.734
+2026-08-07 20:48:35 | INFO | M05 | Best model: random_forest with test accuracy = 0.760
+2026-08-07 20:49:25 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-07 20:49:25 | INFO | M05 |   glucose              0.267
+2026-08-07 20:49:25 | INFO | M05 |   BMI                  0.162
+2026-08-07 20:49:25 | INFO | M05 |   age                  0.131
+2026-08-07 20:49:25 | INFO | M05 |   diabetes_pedigree_function 0.127
+2026-08-07 20:49:25 | INFO | M05 |   blood_pressure       0.086
+2026-08-07 20:49:25 | INFO | M05 |   pregnancies          0.084
+2026-08-07 20:49:25 | INFO | M05 |   insulin              0.073
+2026-08-07 20:49:25 | INFO | M05 |   skin_thickness       0.069
+2026-08-07 20:55:46 | INFO | M06 | === RUN START ===
+2026-08-07 20:55:46 | INFO | M06 | project=M06
+2026-08-07 20:55:46 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:55:46 | INFO | M06 | python=3.14.3
+2026-08-07 20:55:46 | INFO | M06 | os=Windows 11
+2026-08-07 20:55:46 | INFO | M06 | shell=powershell
+2026-08-07 20:55:46 | INFO | M06 | cwd=.
+2026-08-07 20:55:46 | INFO | M06 | github_actions=False
+2026-08-07 20:55:46 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:55:46 | INFO | M06 | Model loaded successfully
+2026-08-07 20:55:59 | INFO | M06 | === RUN START ===
+2026-08-07 20:55:59 | INFO | M06 | project=M06
+2026-08-07 20:55:59 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:55:59 | INFO | M06 | python=3.14.3
+2026-08-07 20:55:59 | INFO | M06 | os=Windows 11
+2026-08-07 20:55:59 | INFO | M06 | shell=powershell
+2026-08-07 20:55:59 | INFO | M06 | cwd=.
+2026-08-07 20:55:59 | INFO | M06 | github_actions=False
+2026-08-07 20:55:59 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:55:59 | INFO | M06 | Model loaded successfully
+2026-08-07 20:56:15 | INFO | M06 | === RUN START ===
+2026-08-07 20:56:15 | INFO | M06 | project=M06
+2026-08-07 20:56:15 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:56:15 | INFO | M06 | python=3.14.3
+2026-08-07 20:56:15 | INFO | M06 | os=Windows 11
+2026-08-07 20:56:15 | INFO | M06 | shell=powershell
+2026-08-07 20:56:15 | INFO | M06 | cwd=.
+2026-08-07 20:56:15 | INFO | M06 | github_actions=False
+2026-08-07 20:56:15 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:56:15 | INFO | M06 | Model loaded successfully
+2026-08-07 20:56:20 | INFO | M06 | === RUN START ===
+2026-08-07 20:56:20 | INFO | M06 | project=M06
+2026-08-07 20:56:20 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:56:20 | INFO | M06 | python=3.14.3
+2026-08-07 20:56:20 | INFO | M06 | os=Windows 11
+2026-08-07 20:56:20 | INFO | M06 | shell=powershell
+2026-08-07 20:56:20 | INFO | M06 | cwd=.
+2026-08-07 20:56:20 | INFO | M06 | github_actions=False
+2026-08-07 20:56:20 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:56:20 | INFO | M06 | Model loaded successfully
+2026-08-07 20:56:29 | INFO | M06 | === RUN START ===
+2026-08-07 20:56:29 | INFO | M06 | project=M06
+2026-08-07 20:56:29 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:56:29 | INFO | M06 | python=3.14.3
+2026-08-07 20:56:29 | INFO | M06 | os=Windows 11
+2026-08-07 20:56:29 | INFO | M06 | shell=powershell
+2026-08-07 20:56:29 | INFO | M06 | cwd=.
+2026-08-07 20:56:29 | INFO | M06 | github_actions=False
+2026-08-07 20:56:29 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:56:29 | INFO | M06 | Model loaded successfully
+2026-08-07 20:56:34 | INFO | M06 | === RUN START ===
+2026-08-07 20:56:34 | INFO | M06 | project=M06
+2026-08-07 20:56:34 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:56:34 | INFO | M06 | python=3.14.3
+2026-08-07 20:56:34 | INFO | M06 | os=Windows 11
+2026-08-07 20:56:34 | INFO | M06 | shell=powershell
+2026-08-07 20:56:34 | INFO | M06 | cwd=.
+2026-08-07 20:56:34 | INFO | M06 | github_actions=False
+2026-08-07 20:56:34 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:56:34 | INFO | M06 | Model loaded successfully
+2026-08-07 20:56:48 | INFO | M06 | === RUN START ===
+2026-08-07 20:56:48 | INFO | M06 | project=M06
+2026-08-07 20:56:48 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:56:48 | INFO | M06 | python=3.14.3
+2026-08-07 20:56:48 | INFO | M06 | os=Windows 11
+2026-08-07 20:56:48 | INFO | M06 | shell=powershell
+2026-08-07 20:56:48 | INFO | M06 | cwd=.
+2026-08-07 20:56:48 | INFO | M06 | github_actions=False
+2026-08-07 20:56:48 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:56:48 | INFO | M06 | Model loaded successfully
+2026-08-07 20:56:53 | INFO | M06 | === RUN START ===
+2026-08-07 20:56:53 | INFO | M06 | project=M06
+2026-08-07 20:56:53 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:56:53 | INFO | M06 | python=3.14.3
+2026-08-07 20:56:53 | INFO | M06 | os=Windows 11
+2026-08-07 20:56:53 | INFO | M06 | shell=powershell
+2026-08-07 20:56:53 | INFO | M06 | cwd=.
+2026-08-07 20:56:53 | INFO | M06 | github_actions=False
+2026-08-07 20:56:53 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:56:53 | INFO | M06 | Model loaded successfully
+2026-08-07 20:57:02 | INFO | M06 | === RUN START ===
+2026-08-07 20:57:02 | INFO | M06 | project=M06
+2026-08-07 20:57:02 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:57:02 | INFO | M06 | python=3.14.3
+2026-08-07 20:57:02 | INFO | M06 | os=Windows 11
+2026-08-07 20:57:02 | INFO | M06 | shell=powershell
+2026-08-07 20:57:02 | INFO | M06 | cwd=.
+2026-08-07 20:57:02 | INFO | M06 | github_actions=False
+2026-08-07 20:57:02 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:57:02 | INFO | M06 | Model loaded successfully
+2026-08-07 20:57:08 | INFO | M06 | === RUN START ===
+2026-08-07 20:57:08 | INFO | M06 | project=M06
+2026-08-07 20:57:08 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:57:08 | INFO | M06 | python=3.14.3
+2026-08-07 20:57:08 | INFO | M06 | os=Windows 11
+2026-08-07 20:57:08 | INFO | M06 | shell=powershell
+2026-08-07 20:57:08 | INFO | M06 | cwd=.
+2026-08-07 20:57:08 | INFO | M06 | github_actions=False
+2026-08-07 20:57:08 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:57:08 | INFO | M06 | Model loaded successfully
+2026-08-07 20:57:17 | INFO | M06 | === RUN START ===
+2026-08-07 20:57:17 | INFO | M06 | project=M06
+2026-08-07 20:57:17 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:57:17 | INFO | M06 | python=3.14.3
+2026-08-07 20:57:17 | INFO | M06 | os=Windows 11
+2026-08-07 20:57:17 | INFO | M06 | shell=powershell
+2026-08-07 20:57:17 | INFO | M06 | cwd=.
+2026-08-07 20:57:17 | INFO | M06 | github_actions=False
+2026-08-07 20:57:17 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:57:17 | INFO | M06 | Model loaded successfully
+2026-08-07 20:57:24 | INFO | M06 | === RUN START ===
+2026-08-07 20:57:24 | INFO | M06 | project=M06
+2026-08-07 20:57:24 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:57:24 | INFO | M06 | python=3.14.3
+2026-08-07 20:57:24 | INFO | M06 | os=Windows 11
+2026-08-07 20:57:24 | INFO | M06 | shell=powershell
+2026-08-07 20:57:24 | INFO | M06 | cwd=.
+2026-08-07 20:57:24 | INFO | M06 | github_actions=False
+2026-08-07 20:57:24 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:57:24 | INFO | M06 | Model loaded successfully
+2026-08-07 20:57:51 | INFO | M06 | === RUN START ===
+2026-08-07 20:57:51 | INFO | M06 | project=M06
+2026-08-07 20:57:51 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:57:51 | INFO | M06 | python=3.14.3
+2026-08-07 20:57:51 | INFO | M06 | os=Windows 11
+2026-08-07 20:57:51 | INFO | M06 | shell=powershell
+2026-08-07 20:57:51 | INFO | M06 | cwd=.
+2026-08-07 20:57:51 | INFO | M06 | github_actions=False
+2026-08-07 20:57:51 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:57:51 | INFO | M06 | Model loaded successfully
+2026-08-07 20:57:57 | INFO | M06 | === RUN START ===
+2026-08-07 20:57:57 | INFO | M06 | project=M06
+2026-08-07 20:57:57 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:57:57 | INFO | M06 | python=3.14.3
+2026-08-07 20:57:57 | INFO | M06 | os=Windows 11
+2026-08-07 20:57:57 | INFO | M06 | shell=powershell
+2026-08-07 20:57:57 | INFO | M06 | cwd=.
+2026-08-07 20:57:57 | INFO | M06 | github_actions=False
+2026-08-07 20:57:57 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:57:57 | INFO | M06 | Model loaded successfully
+2026-08-07 20:58:02 | INFO | M06 | === RUN START ===
+2026-08-07 20:58:02 | INFO | M06 | project=M06
+2026-08-07 20:58:02 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:58:02 | INFO | M06 | python=3.14.3
+2026-08-07 20:58:02 | INFO | M06 | os=Windows 11
+2026-08-07 20:58:02 | INFO | M06 | shell=powershell
+2026-08-07 20:58:02 | INFO | M06 | cwd=.
+2026-08-07 20:58:02 | INFO | M06 | github_actions=False
+2026-08-07 20:58:02 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:58:02 | INFO | M06 | Model loaded successfully
+2026-08-07 20:59:17 | INFO | M06 | === RUN START ===
+2026-08-07 20:59:17 | INFO | M06 | project=M06
+2026-08-07 20:59:17 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 20:59:17 | INFO | M06 | python=3.14.3
+2026-08-07 20:59:17 | INFO | M06 | os=Windows 11
+2026-08-07 20:59:17 | INFO | M06 | shell=powershell
+2026-08-07 20:59:17 | INFO | M06 | cwd=.
+2026-08-07 20:59:17 | INFO | M06 | github_actions=False
+2026-08-07 20:59:17 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 20:59:17 | INFO | M06 | Model loaded successfully
+2026-08-07 21:00:10 | INFO | M06 | === RUN START ===
+2026-08-07 21:00:10 | INFO | M06 | project=M06
+2026-08-07 21:00:10 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 21:00:10 | INFO | M06 | python=3.14.3
+2026-08-07 21:00:10 | INFO | M06 | os=Windows 11
+2026-08-07 21:00:10 | INFO | M06 | shell=powershell
+2026-08-07 21:00:10 | INFO | M06 | cwd=.
+2026-08-07 21:00:10 | INFO | M06 | github_actions=False
+2026-08-07 21:00:10 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-07 21:00:10 | INFO | M06 | Model loaded successfully
+2026-08-07 21:00:53 | INFO | M06 | === RUN START ===
+2026-08-07 21:00:53 | INFO | M06 | project=M06
+2026-08-07 21:00:53 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-07 21:00:53 | INFO | M06 | python=3.14.3
+2026-08-07 21:00:53 | INFO | M06 | os=Windows 11
+2026-08-07 21:00:53 | INFO | M06 | shell=powershell
+2026-08-07 21:00:53 | INFO | M06 | cwd=.
+2026-08-07 21:00:53 | INFO | M06 | github_actions=False
+2026-08-07 21:00:53 | INFO | M06 | Load data.................
+2026-08-07 21:00:53 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 06:50:23 | INFO | M06 | === RUN START ===
+2026-08-09 06:50:23 | INFO | M06 | project=M06
+2026-08-09 06:50:23 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:50:23 | INFO | M06 | python=3.14.3
+2026-08-09 06:50:23 | INFO | M06 | os=Windows 11
+2026-08-09 06:50:23 | INFO | M06 | shell=powershell
+2026-08-09 06:50:23 | INFO | M06 | cwd=.
+2026-08-09 06:50:23 | INFO | M06 | github_actions=False
+2026-08-09 06:50:23 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:50:23 | INFO | M06 | Model loaded successfully
+2026-08-09 06:50:32 | INFO | M06 | === RUN START ===
+2026-08-09 06:50:32 | INFO | M06 | project=M06
+2026-08-09 06:50:32 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:50:32 | INFO | M06 | python=3.14.3
+2026-08-09 06:50:32 | INFO | M06 | os=Windows 11
+2026-08-09 06:50:32 | INFO | M06 | shell=powershell
+2026-08-09 06:50:32 | INFO | M06 | cwd=.
+2026-08-09 06:50:32 | INFO | M06 | github_actions=False
+2026-08-09 06:50:32 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:50:32 | INFO | M06 | Model loaded successfully
+2026-08-09 06:50:37 | INFO | M06 | === RUN START ===
+2026-08-09 06:50:37 | INFO | M06 | project=M06
+2026-08-09 06:50:37 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:50:37 | INFO | M06 | python=3.14.3
+2026-08-09 06:50:37 | INFO | M06 | os=Windows 11
+2026-08-09 06:50:37 | INFO | M06 | shell=powershell
+2026-08-09 06:50:37 | INFO | M06 | cwd=.
+2026-08-09 06:50:37 | INFO | M06 | github_actions=False
+2026-08-09 06:50:37 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:50:37 | INFO | M06 | Model loaded successfully
+2026-08-09 06:51:08 | INFO | M06 | === RUN START ===
+2026-08-09 06:51:08 | INFO | M06 | project=M06
+2026-08-09 06:51:08 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:51:08 | INFO | M06 | python=3.14.3
+2026-08-09 06:51:08 | INFO | M06 | os=Windows 11
+2026-08-09 06:51:08 | INFO | M06 | shell=powershell
+2026-08-09 06:51:08 | INFO | M06 | cwd=.
+2026-08-09 06:51:08 | INFO | M06 | github_actions=False
+2026-08-09 06:51:08 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:51:09 | INFO | M06 | Model loaded successfully
+2026-08-09 06:51:14 | INFO | M06 | === RUN START ===
+2026-08-09 06:51:14 | INFO | M06 | project=M06
+2026-08-09 06:51:14 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:51:14 | INFO | M06 | python=3.14.3
+2026-08-09 06:51:14 | INFO | M06 | os=Windows 11
+2026-08-09 06:51:14 | INFO | M06 | shell=powershell
+2026-08-09 06:51:14 | INFO | M06 | cwd=.
+2026-08-09 06:51:14 | INFO | M06 | github_actions=False
+2026-08-09 06:51:14 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:51:14 | INFO | M06 | Model loaded successfully
+2026-08-09 06:51:18 | INFO | M06 | === RUN START ===
+2026-08-09 06:51:18 | INFO | M06 | project=M06
+2026-08-09 06:51:18 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:51:18 | INFO | M06 | python=3.14.3
+2026-08-09 06:51:18 | INFO | M06 | os=Windows 11
+2026-08-09 06:51:18 | INFO | M06 | shell=powershell
+2026-08-09 06:51:18 | INFO | M06 | cwd=.
+2026-08-09 06:51:18 | INFO | M06 | github_actions=False
+2026-08-09 06:51:18 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:51:18 | INFO | M06 | Model loaded successfully
+2026-08-09 06:53:25 | INFO | M06 | === RUN START ===
+2026-08-09 06:53:25 | INFO | M06 | project=M06
+2026-08-09 06:53:25 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:53:25 | INFO | M06 | python=3.14.3
+2026-08-09 06:53:25 | INFO | M06 | os=Windows 11
+2026-08-09 06:53:25 | INFO | M06 | shell=powershell
+2026-08-09 06:53:25 | INFO | M06 | cwd=.
+2026-08-09 06:53:25 | INFO | M06 | github_actions=False
+2026-08-09 06:53:25 | INFO | M06 | Load data.................
+2026-08-09 06:53:25 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 06:56:28 | INFO | M06 | === RUN START ===
+2026-08-09 06:56:28 | INFO | M06 | project=M06
+2026-08-09 06:56:28 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:56:28 | INFO | M06 | python=3.14.3
+2026-08-09 06:56:28 | INFO | M06 | os=Windows 11
+2026-08-09 06:56:28 | INFO | M06 | shell=powershell
+2026-08-09 06:56:28 | INFO | M06 | cwd=.
+2026-08-09 06:56:28 | INFO | M06 | github_actions=False
+2026-08-09 06:56:28 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:56:28 | INFO | M06 | Model loaded successfully
+2026-08-09 06:56:32 | INFO | M06 | === RUN START ===
+2026-08-09 06:56:32 | INFO | M06 | project=M06
+2026-08-09 06:56:32 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:56:32 | INFO | M06 | python=3.14.3
+2026-08-09 06:56:32 | INFO | M06 | os=Windows 11
+2026-08-09 06:56:32 | INFO | M06 | shell=powershell
+2026-08-09 06:56:32 | INFO | M06 | cwd=.
+2026-08-09 06:56:32 | INFO | M06 | github_actions=False
+2026-08-09 06:56:32 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:56:32 | INFO | M06 | Model loaded successfully
+2026-08-09 06:56:55 | INFO | M06 | === RUN START ===
+2026-08-09 06:56:55 | INFO | M06 | project=M06
+2026-08-09 06:56:55 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:56:55 | INFO | M06 | python=3.14.3
+2026-08-09 06:56:55 | INFO | M06 | os=Windows 11
+2026-08-09 06:56:55 | INFO | M06 | shell=powershell
+2026-08-09 06:56:55 | INFO | M06 | cwd=.
+2026-08-09 06:56:55 | INFO | M06 | github_actions=False
+2026-08-09 06:56:55 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:56:56 | INFO | M06 | Model loaded successfully
+2026-08-09 06:57:01 | INFO | M06 | === RUN START ===
+2026-08-09 06:57:01 | INFO | M06 | project=M06
+2026-08-09 06:57:01 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:57:01 | INFO | M06 | python=3.14.3
+2026-08-09 06:57:01 | INFO | M06 | os=Windows 11
+2026-08-09 06:57:01 | INFO | M06 | shell=powershell
+2026-08-09 06:57:01 | INFO | M06 | cwd=.
+2026-08-09 06:57:01 | INFO | M06 | github_actions=False
+2026-08-09 06:57:01 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:57:01 | INFO | M06 | Model loaded successfully
+2026-08-09 06:57:10 | INFO | M06 | === RUN START ===
+2026-08-09 06:57:10 | INFO | M06 | project=M06
+2026-08-09 06:57:10 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:57:10 | INFO | M06 | python=3.14.3
+2026-08-09 06:57:10 | INFO | M06 | os=Windows 11
+2026-08-09 06:57:10 | INFO | M06 | shell=powershell
+2026-08-09 06:57:10 | INFO | M06 | cwd=.
+2026-08-09 06:57:10 | INFO | M06 | github_actions=False
+2026-08-09 06:57:10 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:57:10 | INFO | M06 | Model loaded successfully
+2026-08-09 06:57:20 | INFO | M06 | === RUN START ===
+2026-08-09 06:57:20 | INFO | M06 | project=M06
+2026-08-09 06:57:20 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:57:20 | INFO | M06 | python=3.14.3
+2026-08-09 06:57:20 | INFO | M06 | os=Windows 11
+2026-08-09 06:57:20 | INFO | M06 | shell=powershell
+2026-08-09 06:57:20 | INFO | M06 | cwd=.
+2026-08-09 06:57:20 | INFO | M06 | github_actions=False
+2026-08-09 06:57:20 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:57:20 | INFO | M06 | Model loaded successfully
+2026-08-09 06:57:25 | INFO | M06 | === RUN START ===
+2026-08-09 06:57:25 | INFO | M06 | project=M06
+2026-08-09 06:57:25 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:57:25 | INFO | M06 | python=3.14.3
+2026-08-09 06:57:25 | INFO | M06 | os=Windows 11
+2026-08-09 06:57:25 | INFO | M06 | shell=powershell
+2026-08-09 06:57:25 | INFO | M06 | cwd=.
+2026-08-09 06:57:25 | INFO | M06 | github_actions=False
+2026-08-09 06:57:25 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:57:25 | INFO | M06 | Model loaded successfully
+2026-08-09 06:57:30 | INFO | M06 | === RUN START ===
+2026-08-09 06:57:30 | INFO | M06 | project=M06
+2026-08-09 06:57:30 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:57:30 | INFO | M06 | python=3.14.3
+2026-08-09 06:57:30 | INFO | M06 | os=Windows 11
+2026-08-09 06:57:30 | INFO | M06 | shell=powershell
+2026-08-09 06:57:30 | INFO | M06 | cwd=.
+2026-08-09 06:57:30 | INFO | M06 | github_actions=False
+2026-08-09 06:57:30 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:57:30 | INFO | M06 | Model loaded successfully
+2026-08-09 06:57:37 | INFO | M06 | === RUN START ===
+2026-08-09 06:57:37 | INFO | M06 | project=M06
+2026-08-09 06:57:37 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:57:37 | INFO | M06 | python=3.14.3
+2026-08-09 06:57:37 | INFO | M06 | os=Windows 11
+2026-08-09 06:57:37 | INFO | M06 | shell=powershell
+2026-08-09 06:57:37 | INFO | M06 | cwd=.
+2026-08-09 06:57:37 | INFO | M06 | github_actions=False
+2026-08-09 06:57:37 | INFO | M06 | Load data.................
+2026-08-09 06:57:37 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 06:58:09 | INFO | M06 | === RUN START ===
+2026-08-09 06:58:09 | INFO | M06 | project=M06
+2026-08-09 06:58:09 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:58:09 | INFO | M06 | python=3.14.3
+2026-08-09 06:58:09 | INFO | M06 | os=Windows 11
+2026-08-09 06:58:09 | INFO | M06 | shell=powershell
+2026-08-09 06:58:09 | INFO | M06 | cwd=.
+2026-08-09 06:58:09 | INFO | M06 | github_actions=False
+2026-08-09 06:58:09 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:58:09 | INFO | M06 | Model loaded successfully
+2026-08-09 06:58:12 | INFO | M06 | === RUN START ===
+2026-08-09 06:58:12 | INFO | M06 | project=M06
+2026-08-09 06:58:12 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:58:12 | INFO | M06 | python=3.14.3
+2026-08-09 06:58:12 | INFO | M06 | os=Windows 11
+2026-08-09 06:58:12 | INFO | M06 | shell=powershell
+2026-08-09 06:58:12 | INFO | M06 | cwd=.
+2026-08-09 06:58:12 | INFO | M06 | github_actions=False
+2026-08-09 06:58:12 | INFO | M06 | Load data.................
+2026-08-09 06:58:12 | INFO | M06 | Loading dataset: C:\Repos\Applied_Machine_Learning\ml-06-serving\project06\diabetes_data.csv
+2026-08-09 06:58:33 | INFO | M06 | === RUN START ===
+2026-08-09 06:58:33 | INFO | M06 | project=M06
+2026-08-09 06:58:33 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:58:33 | INFO | M06 | python=3.14.3
+2026-08-09 06:58:33 | INFO | M06 | os=Windows 11
+2026-08-09 06:58:33 | INFO | M06 | shell=powershell
+2026-08-09 06:58:33 | INFO | M06 | cwd=.
+2026-08-09 06:58:33 | INFO | M06 | github_actions=False
+2026-08-09 06:58:33 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:58:33 | INFO | M06 | Model loaded successfully
+2026-08-09 06:58:39 | INFO | M06 | === RUN START ===
+2026-08-09 06:58:39 | INFO | M06 | project=M06
+2026-08-09 06:58:39 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:58:39 | INFO | M06 | python=3.14.3
+2026-08-09 06:58:39 | INFO | M06 | os=Windows 11
+2026-08-09 06:58:39 | INFO | M06 | shell=powershell
+2026-08-09 06:58:39 | INFO | M06 | cwd=.
+2026-08-09 06:58:39 | INFO | M06 | github_actions=False
+2026-08-09 06:58:39 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:58:39 | INFO | M06 | Model loaded successfully
+2026-08-09 06:58:43 | INFO | M06 | === RUN START ===
+2026-08-09 06:58:43 | INFO | M06 | project=M06
+2026-08-09 06:58:43 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:58:43 | INFO | M06 | python=3.14.3
+2026-08-09 06:58:43 | INFO | M06 | os=Windows 11
+2026-08-09 06:58:43 | INFO | M06 | shell=powershell
+2026-08-09 06:58:43 | INFO | M06 | cwd=.
+2026-08-09 06:58:43 | INFO | M06 | github_actions=False
+2026-08-09 06:58:43 | INFO | M06 | Load data.................
+2026-08-09 06:58:43 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 06:58:43 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 06:58:43 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 06:58:43 | INFO | M06 | Split data................
+2026-08-09 06:58:44 | INFO | M06 | Train instances: 614
+2026-08-09 06:58:44 | INFO | M06 | Test instances:  154
+2026-08-09 06:58:44 | INFO | M06 | Train model...............
+2026-08-09 06:58:44 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 06:58:44 | INFO | M06 | Training complete
+2026-08-09 06:58:44 | INFO | M06 | Evaluate model............
+2026-08-09 06:58:44 | INFO | M06 | Test accuracy: 0.714
+2026-08-09 06:58:44 | INFO | M06 | Save model................
+2026-08-09 06:58:44 | INFO | M06 | Saved model to: artifacts\model.joblib
+2026-08-09 06:58:44 | INFO | M06 | Summarize.................
+2026-08-09 06:58:44 | INFO | M06 | ========================
+2026-08-09 06:58:44 | INFO | M06 | SUMMARY
+2026-08-09 06:58:44 | INFO | M06 | ========================
+2026-08-09 06:58:44 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 06:58:44 | INFO | M06 | Target:   outcome
+2026-08-09 06:58:44 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 06:58:44 | INFO | M06 | Artifact: artifacts\model.joblib
+2026-08-09 06:58:44 | INFO | M06 | ========================
+2026-08-09 06:58:44 | INFO | M06 | ========================
+2026-08-09 06:58:44 | INFO | M06 | Executed successfully!
+2026-08-09 06:58:44 | INFO | M06 | ========================
+2026-08-09 06:59:44 | INFO | M06 | === RUN START ===
+2026-08-09 06:59:44 | INFO | M06 | project=M06
+2026-08-09 06:59:44 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:59:44 | INFO | M06 | python=3.14.3
+2026-08-09 06:59:44 | INFO | M06 | os=Windows 11
+2026-08-09 06:59:44 | INFO | M06 | shell=powershell
+2026-08-09 06:59:44 | INFO | M06 | cwd=.
+2026-08-09 06:59:44 | INFO | M06 | github_actions=False
+2026-08-09 06:59:44 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:59:44 | INFO | M06 | Model loaded successfully
+2026-08-09 06:59:58 | INFO | M06 | === RUN START ===
+2026-08-09 06:59:58 | INFO | M06 | project=M06
+2026-08-09 06:59:58 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 06:59:58 | INFO | M06 | python=3.14.3
+2026-08-09 06:59:58 | INFO | M06 | os=Windows 11
+2026-08-09 06:59:58 | INFO | M06 | shell=powershell
+2026-08-09 06:59:58 | INFO | M06 | cwd=.
+2026-08-09 06:59:58 | INFO | M06 | github_actions=False
+2026-08-09 06:59:58 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 06:59:58 | INFO | M06 | Model loaded successfully
+2026-08-09 07:00:04 | INFO | M06 | === RUN START ===
+2026-08-09 07:00:04 | INFO | M06 | project=M06
+2026-08-09 07:00:04 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:00:04 | INFO | M06 | python=3.14.3
+2026-08-09 07:00:04 | INFO | M06 | os=Windows 11
+2026-08-09 07:00:04 | INFO | M06 | shell=powershell
+2026-08-09 07:00:04 | INFO | M06 | cwd=.
+2026-08-09 07:00:04 | INFO | M06 | github_actions=False
+2026-08-09 07:00:04 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:00:04 | INFO | M06 | Model loaded successfully
+2026-08-09 07:00:10 | INFO | M06 | === RUN START ===
+2026-08-09 07:00:10 | INFO | M06 | project=M06
+2026-08-09 07:00:10 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:00:10 | INFO | M06 | python=3.14.3
+2026-08-09 07:00:10 | INFO | M06 | os=Windows 11
+2026-08-09 07:00:10 | INFO | M06 | shell=powershell
+2026-08-09 07:00:10 | INFO | M06 | cwd=.
+2026-08-09 07:00:10 | INFO | M06 | github_actions=False
+2026-08-09 07:00:10 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:00:10 | INFO | M06 | Model loaded successfully
+2026-08-09 07:01:28 | INFO | M06 | === RUN START ===
+2026-08-09 07:01:28 | INFO | M06 | project=M06
+2026-08-09 07:01:28 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:01:28 | INFO | M06 | python=3.14.3
+2026-08-09 07:01:28 | INFO | M06 | os=Windows 11
+2026-08-09 07:01:28 | INFO | M06 | shell=powershell
+2026-08-09 07:01:28 | INFO | M06 | cwd=.
+2026-08-09 07:01:28 | INFO | M06 | github_actions=False
+2026-08-09 07:01:28 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:01:29 | INFO | M06 | Model loaded successfully
+2026-08-09 07:01:34 | INFO | M06 | === RUN START ===
+2026-08-09 07:01:34 | INFO | M06 | project=M06
+2026-08-09 07:01:34 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:01:34 | INFO | M06 | python=3.14.3
+2026-08-09 07:01:34 | INFO | M06 | os=Windows 11
+2026-08-09 07:01:34 | INFO | M06 | shell=powershell
+2026-08-09 07:01:34 | INFO | M06 | cwd=.
+2026-08-09 07:01:34 | INFO | M06 | github_actions=False
+2026-08-09 07:01:34 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:01:34 | INFO | M06 | Model loaded successfully
+2026-08-09 07:01:40 | INFO | M06 | === RUN START ===
+2026-08-09 07:01:40 | INFO | M06 | project=M06
+2026-08-09 07:01:40 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:01:40 | INFO | M06 | python=3.14.3
+2026-08-09 07:01:40 | INFO | M06 | os=Windows 11
+2026-08-09 07:01:40 | INFO | M06 | shell=powershell
+2026-08-09 07:01:40 | INFO | M06 | cwd=.
+2026-08-09 07:01:40 | INFO | M06 | github_actions=False
+2026-08-09 07:01:40 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:01:40 | INFO | M06 | Model loaded successfully
+2026-08-09 07:01:45 | INFO | M06 | === RUN START ===
+2026-08-09 07:01:45 | INFO | M06 | project=M06
+2026-08-09 07:01:45 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:01:45 | INFO | M06 | python=3.14.3
+2026-08-09 07:01:45 | INFO | M06 | os=Windows 11
+2026-08-09 07:01:45 | INFO | M06 | shell=powershell
+2026-08-09 07:01:45 | INFO | M06 | cwd=.
+2026-08-09 07:01:45 | INFO | M06 | github_actions=False
+2026-08-09 07:01:45 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:01:45 | INFO | M06 | Model loaded successfully
+2026-08-09 07:01:50 | INFO | M06 | === RUN START ===
+2026-08-09 07:01:50 | INFO | M06 | project=M06
+2026-08-09 07:01:50 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:01:50 | INFO | M06 | python=3.14.3
+2026-08-09 07:01:50 | INFO | M06 | os=Windows 11
+2026-08-09 07:01:50 | INFO | M06 | shell=powershell
+2026-08-09 07:01:50 | INFO | M06 | cwd=.
+2026-08-09 07:01:50 | INFO | M06 | github_actions=False
+2026-08-09 07:01:50 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:01:50 | INFO | M06 | Model loaded successfully
+2026-08-09 07:03:07 | INFO | M06 | === RUN START ===
+2026-08-09 07:03:07 | INFO | M06 | project=M06
+2026-08-09 07:03:07 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:03:07 | INFO | M06 | python=3.14.3
+2026-08-09 07:03:07 | INFO | M06 | os=Windows 11
+2026-08-09 07:03:07 | INFO | M06 | shell=powershell
+2026-08-09 07:03:07 | INFO | M06 | cwd=.
+2026-08-09 07:03:07 | INFO | M06 | github_actions=False
+2026-08-09 07:03:07 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:03:07 | INFO | M06 | Model loaded successfully
+2026-08-09 07:03:14 | INFO | M06 | === RUN START ===
+2026-08-09 07:03:14 | INFO | M06 | project=M06
+2026-08-09 07:03:14 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:03:14 | INFO | M06 | python=3.14.3
+2026-08-09 07:03:14 | INFO | M06 | os=Windows 11
+2026-08-09 07:03:14 | INFO | M06 | shell=powershell
+2026-08-09 07:03:14 | INFO | M06 | cwd=.
+2026-08-09 07:03:14 | INFO | M06 | github_actions=False
+2026-08-09 07:03:14 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:03:15 | INFO | M06 | Model loaded successfully
+2026-08-09 07:03:20 | INFO | M06 | === RUN START ===
+2026-08-09 07:03:20 | INFO | M06 | project=M06
+2026-08-09 07:03:20 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:03:20 | INFO | M06 | python=3.14.3
+2026-08-09 07:03:20 | INFO | M06 | os=Windows 11
+2026-08-09 07:03:20 | INFO | M06 | shell=powershell
+2026-08-09 07:03:20 | INFO | M06 | cwd=.
+2026-08-09 07:03:20 | INFO | M06 | github_actions=False
+2026-08-09 07:03:20 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:03:20 | INFO | M06 | Model loaded successfully
+2026-08-09 07:03:24 | INFO | M06 | === RUN START ===
+2026-08-09 07:03:24 | INFO | M06 | project=M06
+2026-08-09 07:03:24 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:03:24 | INFO | M06 | python=3.14.3
+2026-08-09 07:03:24 | INFO | M06 | os=Windows 11
+2026-08-09 07:03:24 | INFO | M06 | shell=powershell
+2026-08-09 07:03:24 | INFO | M06 | cwd=.
+2026-08-09 07:03:24 | INFO | M06 | github_actions=False
+2026-08-09 07:03:24 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:03:25 | INFO | M06 | Model loaded successfully
+2026-08-09 07:03:44 | INFO | M06 | === RUN START ===
+2026-08-09 07:03:44 | INFO | M06 | project=M06
+2026-08-09 07:03:44 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:03:44 | INFO | M06 | python=3.14.3
+2026-08-09 07:03:44 | INFO | M06 | os=Windows 11
+2026-08-09 07:03:44 | INFO | M06 | shell=powershell
+2026-08-09 07:03:44 | INFO | M06 | cwd=.
+2026-08-09 07:03:44 | INFO | M06 | github_actions=False
+2026-08-09 07:03:44 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:03:44 | INFO | M06 | Model loaded successfully
+2026-08-09 07:03:50 | INFO | M06 | === RUN START ===
+2026-08-09 07:03:50 | INFO | M06 | project=M06
+2026-08-09 07:03:50 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:03:50 | INFO | M06 | python=3.14.3
+2026-08-09 07:03:50 | INFO | M06 | os=Windows 11
+2026-08-09 07:03:50 | INFO | M06 | shell=powershell
+2026-08-09 07:03:50 | INFO | M06 | cwd=.
+2026-08-09 07:03:50 | INFO | M06 | github_actions=False
+2026-08-09 07:03:50 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:03:50 | INFO | M06 | Model loaded successfully
+2026-08-09 07:06:32 | INFO | M06 | === RUN START ===
+2026-08-09 07:06:32 | INFO | M06 | project=M06
+2026-08-09 07:06:32 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:06:32 | INFO | M06 | python=3.14.3
+2026-08-09 07:06:32 | INFO | M06 | os=Windows 11
+2026-08-09 07:06:32 | INFO | M06 | shell=powershell
+2026-08-09 07:06:32 | INFO | M06 | cwd=.
+2026-08-09 07:06:32 | INFO | M06 | github_actions=False
+2026-08-09 07:06:32 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:06:32 | INFO | M06 | Model loaded successfully
+2026-08-09 07:06:52 | INFO | M06 | === RUN START ===
+2026-08-09 07:06:52 | INFO | M06 | project=M06
+2026-08-09 07:06:52 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:06:52 | INFO | M06 | python=3.14.3
+2026-08-09 07:06:52 | INFO | M06 | os=Windows 11
+2026-08-09 07:06:52 | INFO | M06 | shell=powershell
+2026-08-09 07:06:52 | INFO | M06 | cwd=.
+2026-08-09 07:06:52 | INFO | M06 | github_actions=False
+2026-08-09 07:06:52 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:06:52 | INFO | M06 | Model loaded successfully
+2026-08-09 07:07:02 | INFO | M06 | === RUN START ===
+2026-08-09 07:07:02 | INFO | M06 | project=M06
+2026-08-09 07:07:02 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:07:02 | INFO | M06 | python=3.14.3
+2026-08-09 07:07:02 | INFO | M06 | os=Windows 11
+2026-08-09 07:07:02 | INFO | M06 | shell=powershell
+2026-08-09 07:07:02 | INFO | M06 | cwd=.
+2026-08-09 07:07:02 | INFO | M06 | github_actions=False
+2026-08-09 07:07:02 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:07:02 | INFO | M06 | Model loaded successfully
+2026-08-09 07:07:27 | INFO | M06 | === RUN START ===
+2026-08-09 07:07:27 | INFO | M06 | project=M06
+2026-08-09 07:07:27 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:07:27 | INFO | M06 | python=3.14.3
+2026-08-09 07:07:27 | INFO | M06 | os=Windows 11
+2026-08-09 07:07:27 | INFO | M06 | shell=powershell
+2026-08-09 07:07:27 | INFO | M06 | cwd=.
+2026-08-09 07:07:27 | INFO | M06 | github_actions=False
+2026-08-09 07:07:27 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:07:27 | INFO | M06 | Model loaded successfully
+2026-08-09 07:07:32 | INFO | M06 | === RUN START ===
+2026-08-09 07:07:32 | INFO | M06 | project=M06
+2026-08-09 07:07:32 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:07:32 | INFO | M06 | python=3.14.3
+2026-08-09 07:07:32 | INFO | M06 | os=Windows 11
+2026-08-09 07:07:32 | INFO | M06 | shell=powershell
+2026-08-09 07:07:32 | INFO | M06 | cwd=.
+2026-08-09 07:07:32 | INFO | M06 | github_actions=False
+2026-08-09 07:07:32 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:07:32 | INFO | M06 | Model loaded successfully
+2026-08-09 07:09:27 | INFO | M06 | === RUN START ===
+2026-08-09 07:09:27 | INFO | M06 | project=M06
+2026-08-09 07:09:27 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:09:27 | INFO | M06 | python=3.14.3
+2026-08-09 07:09:27 | INFO | M06 | os=Windows 11
+2026-08-09 07:09:27 | INFO | M06 | shell=powershell
+2026-08-09 07:09:27 | INFO | M06 | cwd=.
+2026-08-09 07:09:27 | INFO | M06 | github_actions=False
+2026-08-09 07:09:27 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:09:27 | INFO | M06 | Model loaded successfully
+2026-08-09 07:09:35 | INFO | M06 | === RUN START ===
+2026-08-09 07:09:35 | INFO | M06 | project=M06
+2026-08-09 07:09:35 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:09:35 | INFO | M06 | python=3.14.3
+2026-08-09 07:09:35 | INFO | M06 | os=Windows 11
+2026-08-09 07:09:35 | INFO | M06 | shell=powershell
+2026-08-09 07:09:35 | INFO | M06 | cwd=.
+2026-08-09 07:09:35 | INFO | M06 | github_actions=False
+2026-08-09 07:09:35 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:09:35 | INFO | M06 | Model loaded successfully
+2026-08-09 07:09:40 | INFO | M06 | === RUN START ===
+2026-08-09 07:09:40 | INFO | M06 | project=M06
+2026-08-09 07:09:40 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:09:40 | INFO | M06 | python=3.14.3
+2026-08-09 07:09:40 | INFO | M06 | os=Windows 11
+2026-08-09 07:09:40 | INFO | M06 | shell=powershell
+2026-08-09 07:09:40 | INFO | M06 | cwd=.
+2026-08-09 07:09:40 | INFO | M06 | github_actions=False
+2026-08-09 07:09:40 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:09:40 | INFO | M06 | Model loaded successfully
+2026-08-09 07:09:46 | INFO | M06 | === RUN START ===
+2026-08-09 07:09:46 | INFO | M06 | project=M06
+2026-08-09 07:09:46 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:09:46 | INFO | M06 | python=3.14.3
+2026-08-09 07:09:46 | INFO | M06 | os=Windows 11
+2026-08-09 07:09:46 | INFO | M06 | shell=powershell
+2026-08-09 07:09:46 | INFO | M06 | cwd=.
+2026-08-09 07:09:46 | INFO | M06 | github_actions=False
+2026-08-09 07:09:46 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:09:46 | INFO | M06 | Model loaded successfully
+2026-08-09 07:09:53 | INFO | M06 | === RUN START ===
+2026-08-09 07:09:53 | INFO | M06 | project=M06
+2026-08-09 07:09:53 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:09:53 | INFO | M06 | python=3.14.3
+2026-08-09 07:09:53 | INFO | M06 | os=Windows 11
+2026-08-09 07:09:53 | INFO | M06 | shell=powershell
+2026-08-09 07:09:53 | INFO | M06 | cwd=.
+2026-08-09 07:09:53 | INFO | M06 | github_actions=False
+2026-08-09 07:09:53 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:09:53 | INFO | M06 | Model loaded successfully
+2026-08-09 07:09:59 | INFO | M06 | === RUN START ===
+2026-08-09 07:09:59 | INFO | M06 | project=M06
+2026-08-09 07:09:59 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:09:59 | INFO | M06 | python=3.14.3
+2026-08-09 07:09:59 | INFO | M06 | os=Windows 11
+2026-08-09 07:09:59 | INFO | M06 | shell=powershell
+2026-08-09 07:09:59 | INFO | M06 | cwd=.
+2026-08-09 07:09:59 | INFO | M06 | github_actions=False
+2026-08-09 07:09:59 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:09:59 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:00 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:00 | INFO | M06 | project=M06
+2026-08-09 07:11:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:00 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:00 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:00 | INFO | M06 | shell=powershell
+2026-08-09 07:11:00 | INFO | M06 | cwd=.
+2026-08-09 07:11:00 | INFO | M06 | github_actions=False
+2026-08-09 07:11:00 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:00 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:05 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:05 | INFO | M06 | project=M06
+2026-08-09 07:11:05 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:05 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:05 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:05 | INFO | M06 | shell=powershell
+2026-08-09 07:11:05 | INFO | M06 | cwd=.
+2026-08-09 07:11:05 | INFO | M06 | github_actions=False
+2026-08-09 07:11:05 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:05 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:11 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:11 | INFO | M06 | project=M06
+2026-08-09 07:11:11 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:11 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:11 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:11 | INFO | M06 | shell=powershell
+2026-08-09 07:11:11 | INFO | M06 | cwd=.
+2026-08-09 07:11:11 | INFO | M06 | github_actions=False
+2026-08-09 07:11:11 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:11 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:20 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:20 | INFO | M06 | project=M06
+2026-08-09 07:11:20 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:20 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:20 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:20 | INFO | M06 | shell=powershell
+2026-08-09 07:11:20 | INFO | M06 | cwd=.
+2026-08-09 07:11:20 | INFO | M06 | github_actions=False
+2026-08-09 07:11:20 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:20 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:26 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:26 | INFO | M06 | project=M06
+2026-08-09 07:11:26 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:26 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:26 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:26 | INFO | M06 | shell=powershell
+2026-08-09 07:11:26 | INFO | M06 | cwd=.
+2026-08-09 07:11:26 | INFO | M06 | github_actions=False
+2026-08-09 07:11:26 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:26 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:39 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:39 | INFO | M06 | project=M06
+2026-08-09 07:11:39 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:39 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:39 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:39 | INFO | M06 | shell=powershell
+2026-08-09 07:11:39 | INFO | M06 | cwd=.
+2026-08-09 07:11:39 | INFO | M06 | github_actions=False
+2026-08-09 07:11:39 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:39 | INFO | M06 | Model loaded successfully
+2026-08-09 07:11:43 | INFO | M06 | === RUN START ===
+2026-08-09 07:11:43 | INFO | M06 | project=M06
+2026-08-09 07:11:43 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:11:43 | INFO | M06 | python=3.14.3
+2026-08-09 07:11:43 | INFO | M06 | os=Windows 11
+2026-08-09 07:11:43 | INFO | M06 | shell=powershell
+2026-08-09 07:11:43 | INFO | M06 | cwd=.
+2026-08-09 07:11:43 | INFO | M06 | github_actions=False
+2026-08-09 07:11:43 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:11:43 | INFO | M06 | Model loaded successfully
+2026-08-09 07:13:12 | INFO | M06 | === RUN START ===
+2026-08-09 07:13:12 | INFO | M06 | project=M06
+2026-08-09 07:13:12 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:13:12 | INFO | M06 | python=3.14.3
+2026-08-09 07:13:12 | INFO | M06 | os=Windows 11
+2026-08-09 07:13:12 | INFO | M06 | shell=powershell
+2026-08-09 07:13:12 | INFO | M06 | cwd=.
+2026-08-09 07:13:12 | INFO | M06 | github_actions=False
+2026-08-09 07:13:12 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:13:12 | INFO | M06 | === RUN START ===
+2026-08-09 07:13:12 | INFO | M06 | project=M06
+2026-08-09 07:13:12 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:13:12 | INFO | M06 | python=3.14.3
+2026-08-09 07:13:12 | INFO | M06 | os=Windows 11
+2026-08-09 07:13:12 | INFO | M06 | shell=powershell
+2026-08-09 07:13:12 | INFO | M06 | cwd=.
+2026-08-09 07:13:12 | INFO | M06 | github_actions=False
+2026-08-09 07:13:12 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:13:12 | INFO | M06 | Model loaded successfully
+2026-08-09 07:13:12 | INFO | M06 | Model loaded successfully
+2026-08-09 07:13:18 | INFO | M06 | === RUN START ===
+2026-08-09 07:13:18 | INFO | M06 | project=M06
+2026-08-09 07:13:18 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:13:18 | INFO | M06 | python=3.14.3
+2026-08-09 07:13:18 | INFO | M06 | os=Windows 11
+2026-08-09 07:13:18 | INFO | M06 | shell=powershell
+2026-08-09 07:13:18 | INFO | M06 | cwd=.
+2026-08-09 07:13:18 | INFO | M06 | github_actions=False
+2026-08-09 07:13:18 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:13:18 | INFO | M06 | === RUN START ===
+2026-08-09 07:13:18 | INFO | M06 | project=M06
+2026-08-09 07:13:18 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:13:18 | INFO | M06 | python=3.14.3
+2026-08-09 07:13:18 | INFO | M06 | os=Windows 11
+2026-08-09 07:13:18 | INFO | M06 | shell=powershell
+2026-08-09 07:13:18 | INFO | M06 | cwd=.
+2026-08-09 07:13:18 | INFO | M06 | github_actions=False
+2026-08-09 07:13:18 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:13:18 | INFO | M06 | Model loaded successfully
+2026-08-09 07:13:18 | INFO | M06 | Model loaded successfully
+2026-08-09 07:13:24 | INFO | M06 | === RUN START ===
+2026-08-09 07:13:24 | INFO | M06 | project=M06
+2026-08-09 07:13:24 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:13:24 | INFO | M06 | python=3.14.3
+2026-08-09 07:13:24 | INFO | M06 | os=Windows 11
+2026-08-09 07:13:24 | INFO | M06 | shell=powershell
+2026-08-09 07:13:24 | INFO | M06 | cwd=.
+2026-08-09 07:13:24 | INFO | M06 | github_actions=False
+2026-08-09 07:13:24 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:13:24 | INFO | M06 | === RUN START ===
+2026-08-09 07:13:24 | INFO | M06 | project=M06
+2026-08-09 07:13:24 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:13:24 | INFO | M06 | python=3.14.3
+2026-08-09 07:13:24 | INFO | M06 | os=Windows 11
+2026-08-09 07:13:24 | INFO | M06 | shell=powershell
+2026-08-09 07:13:24 | INFO | M06 | cwd=.
+2026-08-09 07:13:24 | INFO | M06 | github_actions=False
+2026-08-09 07:13:24 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:13:24 | INFO | M06 | Model loaded successfully
+2026-08-09 07:13:24 | INFO | M06 | Model loaded successfully
+2026-08-09 07:14:21 | INFO | M06 | === RUN START ===
+2026-08-09 07:14:21 | INFO | M06 | project=M06
+2026-08-09 07:14:21 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:14:21 | INFO | M06 | python=3.14.3
+2026-08-09 07:14:21 | INFO | M06 | os=Windows 11
+2026-08-09 07:14:21 | INFO | M06 | shell=powershell
+2026-08-09 07:14:21 | INFO | M06 | cwd=.
+2026-08-09 07:14:21 | INFO | M06 | github_actions=False
+2026-08-09 07:14:21 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:14:21 | INFO | M06 | === RUN START ===
+2026-08-09 07:14:21 | INFO | M06 | project=M06
+2026-08-09 07:14:21 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:14:21 | INFO | M06 | python=3.14.3
+2026-08-09 07:14:21 | INFO | M06 | os=Windows 11
+2026-08-09 07:14:21 | INFO | M06 | shell=powershell
+2026-08-09 07:14:21 | INFO | M06 | cwd=.
+2026-08-09 07:14:21 | INFO | M06 | github_actions=False
+2026-08-09 07:14:21 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 07:14:21 | INFO | M06 | Model loaded successfully
+2026-08-09 07:14:21 | INFO | M06 | Model loaded successfully
+2026-08-09 07:15:44 | INFO | M06 | === RUN START ===
+2026-08-09 07:15:44 | INFO | M06 | project=M06
+2026-08-09 07:15:44 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:15:44 | INFO | M06 | python=3.14.3
+2026-08-09 07:15:44 | INFO | M06 | os=Windows 11
+2026-08-09 07:15:44 | INFO | M06 | shell=powershell
+2026-08-09 07:15:44 | INFO | M06 | cwd=.
+2026-08-09 07:15:44 | INFO | M06 | github_actions=False
+2026-08-09 07:15:44 | INFO | M06 | Load data.................
+2026-08-09 07:15:44 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 07:15:44 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 07:15:44 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 07:15:44 | INFO | M06 | Split data................
+2026-08-09 07:15:44 | INFO | M06 | Train instances: 614
+2026-08-09 07:15:44 | INFO | M06 | Test instances:  154
+2026-08-09 07:15:44 | INFO | M06 | Train model...............
+2026-08-09 07:15:44 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 07:15:45 | INFO | M06 | Training complete
+2026-08-09 07:15:45 | INFO | M06 | Evaluate model............
+2026-08-09 07:15:45 | INFO | M06 | Test accuracy: 0.714
+2026-08-09 07:15:45 | INFO | M06 | Save model................
+2026-08-09 07:15:45 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 07:15:45 | INFO | M06 | Summarize.................
+2026-08-09 07:15:45 | INFO | M06 | ========================
+2026-08-09 07:15:45 | INFO | M06 | SUMMARY
+2026-08-09 07:15:45 | INFO | M06 | ========================
+2026-08-09 07:15:45 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 07:15:45 | INFO | M06 | Target:   outcome
+2026-08-09 07:15:45 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 07:15:45 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 07:15:45 | INFO | M06 | ========================
+2026-08-09 07:15:45 | INFO | M06 | ========================
+2026-08-09 07:15:45 | INFO | M06 | Executed successfully!
+2026-08-09 07:15:45 | INFO | M06 | ========================
+2026-08-09 07:17:23 | INFO | M06 | === RUN START ===
+2026-08-09 07:17:23 | INFO | M06 | project=M06
+2026-08-09 07:17:23 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:17:23 | INFO | M06 | python=3.14.3
+2026-08-09 07:17:23 | INFO | M06 | os=Windows 11
+2026-08-09 07:17:23 | INFO | M06 | shell=powershell
+2026-08-09 07:17:23 | INFO | M06 | cwd=.
+2026-08-09 07:17:23 | INFO | M06 | github_actions=False
+2026-08-09 07:17:23 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:17:23 | INFO | M06 | Model loaded successfully
+2026-08-09 07:17:27 | INFO | M06 | === RUN START ===
+2026-08-09 07:17:27 | INFO | M06 | project=M06
+2026-08-09 07:17:27 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:17:27 | INFO | M06 | python=3.14.3
+2026-08-09 07:17:27 | INFO | M06 | os=Windows 11
+2026-08-09 07:17:27 | INFO | M06 | shell=powershell
+2026-08-09 07:17:27 | INFO | M06 | cwd=.
+2026-08-09 07:17:27 | INFO | M06 | github_actions=False
+2026-08-09 07:17:27 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:17:27 | INFO | M06 | Model loaded successfully
+2026-08-09 07:25:56 | INFO | M06 | === RUN START ===
+2026-08-09 07:25:56 | INFO | M06 | project=M06
+2026-08-09 07:25:56 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:25:56 | INFO | M06 | python=3.14.3
+2026-08-09 07:25:56 | INFO | M06 | os=Windows 11
+2026-08-09 07:25:56 | INFO | M06 | shell=powershell
+2026-08-09 07:25:56 | INFO | M06 | cwd=.
+2026-08-09 07:25:56 | INFO | M06 | github_actions=False
+2026-08-09 07:25:56 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:25:56 | INFO | M06 | Model loaded successfully
+2026-08-09 07:26:06 | INFO | M06 | === RUN START ===
+2026-08-09 07:26:06 | INFO | M06 | project=M06
+2026-08-09 07:26:06 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:26:06 | INFO | M06 | python=3.14.3
+2026-08-09 07:26:06 | INFO | M06 | os=Windows 11
+2026-08-09 07:26:06 | INFO | M06 | shell=powershell
+2026-08-09 07:26:06 | INFO | M06 | cwd=.
+2026-08-09 07:26:06 | INFO | M06 | github_actions=False
+2026-08-09 07:26:06 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:26:06 | INFO | M06 | Model loaded successfully
+2026-08-09 07:26:12 | INFO | M06 | === RUN START ===
+2026-08-09 07:26:12 | INFO | M06 | project=M06
+2026-08-09 07:26:12 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:26:12 | INFO | M06 | python=3.14.3
+2026-08-09 07:26:12 | INFO | M06 | os=Windows 11
+2026-08-09 07:26:12 | INFO | M06 | shell=powershell
+2026-08-09 07:26:12 | INFO | M06 | cwd=.
+2026-08-09 07:26:12 | INFO | M06 | github_actions=False
+2026-08-09 07:26:12 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:26:12 | INFO | M06 | Model loaded successfully
+2026-08-09 07:26:17 | INFO | M06 | === RUN START ===
+2026-08-09 07:26:17 | INFO | M06 | project=M06
+2026-08-09 07:26:17 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:26:17 | INFO | M06 | python=3.14.3
+2026-08-09 07:26:17 | INFO | M06 | os=Windows 11
+2026-08-09 07:26:17 | INFO | M06 | shell=powershell
+2026-08-09 07:26:17 | INFO | M06 | cwd=.
+2026-08-09 07:26:17 | INFO | M06 | github_actions=False
+2026-08-09 07:26:17 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:26:17 | INFO | M06 | Model loaded successfully
+2026-08-09 07:26:26 | INFO | M06 | === RUN START ===
+2026-08-09 07:26:26 | INFO | M06 | project=M06
+2026-08-09 07:26:26 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:26:26 | INFO | M06 | python=3.14.3
+2026-08-09 07:26:26 | INFO | M06 | os=Windows 11
+2026-08-09 07:26:26 | INFO | M06 | shell=powershell
+2026-08-09 07:26:26 | INFO | M06 | cwd=.
+2026-08-09 07:26:26 | INFO | M06 | github_actions=False
+2026-08-09 07:26:26 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:26:26 | INFO | M06 | Model loaded successfully
+2026-08-09 07:26:49 | INFO | M06 | === RUN START ===
+2026-08-09 07:26:49 | INFO | M06 | project=M06
+2026-08-09 07:26:49 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:26:49 | INFO | M06 | python=3.14.3
+2026-08-09 07:26:49 | INFO | M06 | os=Windows 11
+2026-08-09 07:26:49 | INFO | M06 | shell=powershell
+2026-08-09 07:26:49 | INFO | M06 | cwd=.
+2026-08-09 07:26:49 | INFO | M06 | github_actions=False
+2026-08-09 07:26:49 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:26:49 | INFO | M06 | Model loaded successfully
+2026-08-09 07:27:00 | INFO | M06 | === RUN START ===
+2026-08-09 07:27:00 | INFO | M06 | project=M06
+2026-08-09 07:27:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:27:00 | INFO | M06 | python=3.14.3
+2026-08-09 07:27:00 | INFO | M06 | os=Windows 11
+2026-08-09 07:27:00 | INFO | M06 | shell=powershell
+2026-08-09 07:27:00 | INFO | M06 | cwd=.
+2026-08-09 07:27:00 | INFO | M06 | github_actions=False
+2026-08-09 07:27:00 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:27:00 | INFO | M06 | Model loaded successfully
+2026-08-09 07:27:08 | INFO | M06 | === RUN START ===
+2026-08-09 07:27:08 | INFO | M06 | project=M06
+2026-08-09 07:27:08 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:27:08 | INFO | M06 | python=3.14.3
+2026-08-09 07:27:08 | INFO | M06 | os=Windows 11
+2026-08-09 07:27:08 | INFO | M06 | shell=powershell
+2026-08-09 07:27:08 | INFO | M06 | cwd=.
+2026-08-09 07:27:08 | INFO | M06 | github_actions=False
+2026-08-09 07:27:08 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:27:08 | INFO | M06 | Model loaded successfully
+2026-08-09 07:27:13 | INFO | M06 | === RUN START ===
+2026-08-09 07:27:13 | INFO | M06 | project=M06
+2026-08-09 07:27:13 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:27:13 | INFO | M06 | python=3.14.3
+2026-08-09 07:27:13 | INFO | M06 | os=Windows 11
+2026-08-09 07:27:13 | INFO | M06 | shell=powershell
+2026-08-09 07:27:13 | INFO | M06 | cwd=.
+2026-08-09 07:27:13 | INFO | M06 | github_actions=False
+2026-08-09 07:27:13 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:27:13 | INFO | M06 | Model loaded successfully
+2026-08-09 07:27:21 | INFO | M06 | === RUN START ===
+2026-08-09 07:27:21 | INFO | M06 | project=M06
+2026-08-09 07:27:21 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:27:21 | INFO | M06 | python=3.14.3
+2026-08-09 07:27:21 | INFO | M06 | os=Windows 11
+2026-08-09 07:27:21 | INFO | M06 | shell=powershell
+2026-08-09 07:27:21 | INFO | M06 | cwd=.
+2026-08-09 07:27:21 | INFO | M06 | github_actions=False
+2026-08-09 07:27:21 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:27:21 | INFO | M06 | Model loaded successfully
+2026-08-09 07:27:26 | INFO | M06 | === RUN START ===
+2026-08-09 07:27:26 | INFO | M06 | project=M06
+2026-08-09 07:27:26 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:27:26 | INFO | M06 | python=3.14.3
+2026-08-09 07:27:26 | INFO | M06 | os=Windows 11
+2026-08-09 07:27:26 | INFO | M06 | shell=powershell
+2026-08-09 07:27:26 | INFO | M06 | cwd=.
+2026-08-09 07:27:26 | INFO | M06 | github_actions=False
+2026-08-09 07:27:26 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:27:26 | INFO | M06 | Model loaded successfully
+2026-08-09 07:27:31 | INFO | M06 | === RUN START ===
+2026-08-09 07:27:31 | INFO | M06 | project=M06
+2026-08-09 07:27:31 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:27:31 | INFO | M06 | python=3.14.3
+2026-08-09 07:27:31 | INFO | M06 | os=Windows 11
+2026-08-09 07:27:31 | INFO | M06 | shell=powershell
+2026-08-09 07:27:31 | INFO | M06 | cwd=.
+2026-08-09 07:27:31 | INFO | M06 | github_actions=False
+2026-08-09 07:27:31 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:27:31 | INFO | M06 | Model loaded successfully
+2026-08-09 07:28:03 | INFO | M06 | === RUN START ===
+2026-08-09 07:28:03 | INFO | M06 | project=M06
+2026-08-09 07:28:03 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:28:03 | INFO | M06 | python=3.14.3
+2026-08-09 07:28:03 | INFO | M06 | os=Windows 11
+2026-08-09 07:28:03 | INFO | M06 | shell=powershell
+2026-08-09 07:28:03 | INFO | M06 | cwd=.
+2026-08-09 07:28:03 | INFO | M06 | github_actions=False
+2026-08-09 07:28:03 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:28:03 | INFO | M06 | Model loaded successfully
+2026-08-09 07:28:08 | INFO | M06 | === RUN START ===
+2026-08-09 07:28:08 | INFO | M06 | project=M06
+2026-08-09 07:28:08 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:28:08 | INFO | M06 | python=3.14.3
+2026-08-09 07:28:08 | INFO | M06 | os=Windows 11
+2026-08-09 07:28:08 | INFO | M06 | shell=powershell
+2026-08-09 07:28:08 | INFO | M06 | cwd=.
+2026-08-09 07:28:08 | INFO | M06 | github_actions=False
+2026-08-09 07:28:08 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:28:08 | INFO | M06 | Model loaded successfully
+2026-08-09 07:29:41 | INFO | M06 | === RUN START ===
+2026-08-09 07:29:41 | INFO | M06 | project=M06
+2026-08-09 07:29:41 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:29:41 | INFO | M06 | python=3.14.3
+2026-08-09 07:29:41 | INFO | M06 | os=Windows 11
+2026-08-09 07:29:41 | INFO | M06 | shell=powershell
+2026-08-09 07:29:41 | INFO | M06 | cwd=.
+2026-08-09 07:29:41 | INFO | M06 | github_actions=False
+2026-08-09 07:29:41 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:29:41 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:23 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:23 | INFO | M06 | project=M06
+2026-08-09 07:30:23 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:23 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:23 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:23 | INFO | M06 | shell=powershell
+2026-08-09 07:30:23 | INFO | M06 | cwd=.
+2026-08-09 07:30:23 | INFO | M06 | github_actions=False
+2026-08-09 07:30:23 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:24 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:30 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:30 | INFO | M06 | project=M06
+2026-08-09 07:30:30 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:30 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:30 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:30 | INFO | M06 | shell=powershell
+2026-08-09 07:30:30 | INFO | M06 | cwd=.
+2026-08-09 07:30:30 | INFO | M06 | github_actions=False
+2026-08-09 07:30:30 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:30 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:36 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:36 | INFO | M06 | project=M06
+2026-08-09 07:30:36 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:36 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:36 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:36 | INFO | M06 | shell=powershell
+2026-08-09 07:30:36 | INFO | M06 | cwd=.
+2026-08-09 07:30:36 | INFO | M06 | github_actions=False
+2026-08-09 07:30:36 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:36 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:41 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:41 | INFO | M06 | project=M06
+2026-08-09 07:30:41 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:41 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:41 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:41 | INFO | M06 | shell=powershell
+2026-08-09 07:30:41 | INFO | M06 | cwd=.
+2026-08-09 07:30:41 | INFO | M06 | github_actions=False
+2026-08-09 07:30:41 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:41 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:47 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:47 | INFO | M06 | project=M06
+2026-08-09 07:30:47 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:47 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:47 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:47 | INFO | M06 | shell=powershell
+2026-08-09 07:30:47 | INFO | M06 | cwd=.
+2026-08-09 07:30:47 | INFO | M06 | github_actions=False
+2026-08-09 07:30:47 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:47 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:52 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:52 | INFO | M06 | project=M06
+2026-08-09 07:30:52 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:52 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:52 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:52 | INFO | M06 | shell=powershell
+2026-08-09 07:30:52 | INFO | M06 | cwd=.
+2026-08-09 07:30:52 | INFO | M06 | github_actions=False
+2026-08-09 07:30:52 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:52 | INFO | M06 | Model loaded successfully
+2026-08-09 07:30:58 | INFO | M06 | === RUN START ===
+2026-08-09 07:30:58 | INFO | M06 | project=M06
+2026-08-09 07:30:58 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:30:58 | INFO | M06 | python=3.14.3
+2026-08-09 07:30:58 | INFO | M06 | os=Windows 11
+2026-08-09 07:30:58 | INFO | M06 | shell=powershell
+2026-08-09 07:30:58 | INFO | M06 | cwd=.
+2026-08-09 07:30:58 | INFO | M06 | github_actions=False
+2026-08-09 07:30:58 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:30:59 | INFO | M06 | Model loaded successfully
+2026-08-09 07:31:07 | INFO | M06 | === RUN START ===
+2026-08-09 07:31:07 | INFO | M06 | project=M06
+2026-08-09 07:31:07 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:31:07 | INFO | M06 | python=3.14.3
+2026-08-09 07:31:07 | INFO | M06 | os=Windows 11
+2026-08-09 07:31:07 | INFO | M06 | shell=powershell
+2026-08-09 07:31:07 | INFO | M06 | cwd=.
+2026-08-09 07:31:07 | INFO | M06 | github_actions=False
+2026-08-09 07:31:07 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:31:08 | INFO | M06 | Model loaded successfully
+2026-08-09 07:31:13 | INFO | M06 | === RUN START ===
+2026-08-09 07:31:13 | INFO | M06 | project=M06
+2026-08-09 07:31:13 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:31:13 | INFO | M06 | python=3.14.3
+2026-08-09 07:31:13 | INFO | M06 | os=Windows 11
+2026-08-09 07:31:13 | INFO | M06 | shell=powershell
+2026-08-09 07:31:13 | INFO | M06 | cwd=.
+2026-08-09 07:31:13 | INFO | M06 | github_actions=False
+2026-08-09 07:31:13 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:31:13 | INFO | M06 | Model loaded successfully
+2026-08-09 07:31:23 | INFO | M06 | === RUN START ===
+2026-08-09 07:31:23 | INFO | M06 | project=M06
+2026-08-09 07:31:23 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:31:23 | INFO | M06 | python=3.14.3
+2026-08-09 07:31:23 | INFO | M06 | os=Windows 11
+2026-08-09 07:31:23 | INFO | M06 | shell=powershell
+2026-08-09 07:31:23 | INFO | M06 | cwd=.
+2026-08-09 07:31:23 | INFO | M06 | github_actions=False
+2026-08-09 07:31:23 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:31:23 | INFO | M06 | Model loaded successfully
+2026-08-09 07:31:28 | INFO | M06 | === RUN START ===
+2026-08-09 07:31:28 | INFO | M06 | project=M06
+2026-08-09 07:31:28 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:31:28 | INFO | M06 | python=3.14.3
+2026-08-09 07:31:28 | INFO | M06 | os=Windows 11
+2026-08-09 07:31:28 | INFO | M06 | shell=powershell
+2026-08-09 07:31:28 | INFO | M06 | cwd=.
+2026-08-09 07:31:28 | INFO | M06 | github_actions=False
+2026-08-09 07:31:28 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:31:28 | INFO | M06 | Model loaded successfully
+2026-08-09 07:31:33 | INFO | M06 | === RUN START ===
+2026-08-09 07:31:33 | INFO | M06 | project=M06
+2026-08-09 07:31:33 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:31:33 | INFO | M06 | python=3.14.3
+2026-08-09 07:31:33 | INFO | M06 | os=Windows 11
+2026-08-09 07:31:33 | INFO | M06 | shell=powershell
+2026-08-09 07:31:33 | INFO | M06 | cwd=.
+2026-08-09 07:31:33 | INFO | M06 | github_actions=False
+2026-08-09 07:31:33 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:31:33 | INFO | M06 | Model loaded successfully
+2026-08-09 07:32:05 | INFO | M06 | === RUN START ===
+2026-08-09 07:32:05 | INFO | M06 | project=M06
+2026-08-09 07:32:05 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:32:05 | INFO | M06 | python=3.14.3
+2026-08-09 07:32:05 | INFO | M06 | os=Windows 11
+2026-08-09 07:32:05 | INFO | M06 | shell=powershell
+2026-08-09 07:32:05 | INFO | M06 | cwd=.
+2026-08-09 07:32:05 | INFO | M06 | github_actions=False
+2026-08-09 07:32:05 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:32:05 | INFO | M06 | Model loaded successfully
+2026-08-09 07:32:19 | INFO | M06 | === RUN START ===
+2026-08-09 07:32:19 | INFO | M06 | project=M06
+2026-08-09 07:32:19 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:32:19 | INFO | M06 | python=3.14.3
+2026-08-09 07:32:19 | INFO | M06 | os=Windows 11
+2026-08-09 07:32:19 | INFO | M06 | shell=powershell
+2026-08-09 07:32:19 | INFO | M06 | cwd=.
+2026-08-09 07:32:19 | INFO | M06 | github_actions=False
+2026-08-09 07:32:19 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:32:19 | INFO | M06 | Model loaded successfully
+2026-08-09 07:32:37 | INFO | M06 | === RUN START ===
+2026-08-09 07:32:37 | INFO | M06 | project=M06
+2026-08-09 07:32:37 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:32:37 | INFO | M06 | python=3.14.3
+2026-08-09 07:32:37 | INFO | M06 | os=Windows 11
+2026-08-09 07:32:37 | INFO | M06 | shell=powershell
+2026-08-09 07:32:37 | INFO | M06 | cwd=.
+2026-08-09 07:32:37 | INFO | M06 | github_actions=False
+2026-08-09 07:32:37 | INFO | M06 | Load data.................
+2026-08-09 07:32:37 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 07:32:37 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 07:40:10 | INFO | M06 | === RUN START ===
+2026-08-09 07:40:10 | INFO | M06 | project=M06
+2026-08-09 07:40:10 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:40:10 | INFO | M06 | python=3.14.3
+2026-08-09 07:40:10 | INFO | M06 | os=Windows 11
+2026-08-09 07:40:10 | INFO | M06 | shell=powershell
+2026-08-09 07:40:10 | INFO | M06 | cwd=.
+2026-08-09 07:40:10 | INFO | M06 | github_actions=False
+2026-08-09 07:40:10 | INFO | M06 | Load data.................
+2026-08-09 07:40:10 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 07:40:10 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 07:40:10 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 07:40:10 | INFO | M06 | Add Column.................
+2026-08-09 07:40:10 | INFO | M06 | Split data................
+2026-08-09 07:40:10 | INFO | M06 | Train instances: 614
+2026-08-09 07:40:10 | INFO | M06 | Test instances:  154
+2026-08-09 07:40:10 | INFO | M06 | Train model...............
+2026-08-09 07:40:10 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 07:40:11 | INFO | M06 | Training complete
+2026-08-09 07:40:11 | INFO | M06 | Evaluate model............
+2026-08-09 07:40:11 | INFO | M06 | Test accuracy: 0.721
+2026-08-09 07:40:11 | INFO | M06 | Save model................
+2026-08-09 07:40:11 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 07:40:11 | INFO | M06 | Summarize.................
+2026-08-09 07:40:11 | INFO | M06 | ========================
+2026-08-09 07:40:11 | INFO | M06 | SUMMARY
+2026-08-09 07:40:11 | INFO | M06 | ========================
+2026-08-09 07:40:11 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 07:40:11 | INFO | M06 | Target:   diabetic
+2026-08-09 07:40:11 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 07:40:11 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 07:40:11 | INFO | M06 | ========================
+2026-08-09 07:40:11 | INFO | M06 | ========================
+2026-08-09 07:40:11 | INFO | M06 | Executed successfully!
+2026-08-09 07:40:11 | INFO | M06 | ========================
+2026-08-09 07:41:59 | INFO | M06 | === RUN START ===
+2026-08-09 07:41:59 | INFO | M06 | project=M06
+2026-08-09 07:41:59 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:41:59 | INFO | M06 | python=3.14.3
+2026-08-09 07:41:59 | INFO | M06 | os=Windows 11
+2026-08-09 07:41:59 | INFO | M06 | shell=powershell
+2026-08-09 07:41:59 | INFO | M06 | cwd=.
+2026-08-09 07:41:59 | INFO | M06 | github_actions=False
+2026-08-09 07:41:59 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:41:59 | INFO | M06 | Model loaded successfully
+2026-08-09 07:42:03 | INFO | M06 | === RUN START ===
+2026-08-09 07:42:03 | INFO | M06 | project=M06
+2026-08-09 07:42:03 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:42:03 | INFO | M06 | python=3.14.3
+2026-08-09 07:42:03 | INFO | M06 | os=Windows 11
+2026-08-09 07:42:03 | INFO | M06 | shell=powershell
+2026-08-09 07:42:03 | INFO | M06 | cwd=.
+2026-08-09 07:42:03 | INFO | M06 | github_actions=False
+2026-08-09 07:42:03 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:42:04 | INFO | M06 | Model loaded successfully
+2026-08-09 07:59:15 | INFO | M06 | === RUN START ===
+2026-08-09 07:59:15 | INFO | M06 | project=M06
+2026-08-09 07:59:15 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:59:15 | INFO | M06 | python=3.14.3
+2026-08-09 07:59:15 | INFO | M06 | os=Windows 11
+2026-08-09 07:59:15 | INFO | M06 | shell=powershell
+2026-08-09 07:59:15 | INFO | M06 | cwd=.
+2026-08-09 07:59:15 | INFO | M06 | github_actions=False
+2026-08-09 07:59:15 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:59:15 | INFO | M06 | Model loaded successfully
+2026-08-09 07:59:20 | INFO | M06 | === RUN START ===
+2026-08-09 07:59:20 | INFO | M06 | project=M06
+2026-08-09 07:59:20 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 07:59:20 | INFO | M06 | python=3.14.3
+2026-08-09 07:59:20 | INFO | M06 | os=Windows 11
+2026-08-09 07:59:20 | INFO | M06 | shell=powershell
+2026-08-09 07:59:20 | INFO | M06 | cwd=.
+2026-08-09 07:59:20 | INFO | M06 | github_actions=False
+2026-08-09 07:59:20 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 07:59:20 | INFO | M06 | Model loaded successfully
+2026-08-09 08:00:18 | INFO | M06 | === RUN START ===
+2026-08-09 08:00:18 | INFO | M06 | project=M06
+2026-08-09 08:00:18 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:00:18 | INFO | M06 | python=3.14.3
+2026-08-09 08:00:18 | INFO | M06 | os=Windows 11
+2026-08-09 08:00:18 | INFO | M06 | shell=powershell
+2026-08-09 08:00:18 | INFO | M06 | cwd=project06
+2026-08-09 08:00:18 | INFO | M06 | github_actions=False
+2026-08-09 08:04:22 | INFO | M06 | === RUN START ===
+2026-08-09 08:04:22 | INFO | M06 | project=M06
+2026-08-09 08:04:22 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:04:22 | INFO | M06 | python=3.14.3
+2026-08-09 08:04:22 | INFO | M06 | os=Windows 11
+2026-08-09 08:04:22 | INFO | M06 | shell=powershell
+2026-08-09 08:04:22 | INFO | M06 | cwd=.
+2026-08-09 08:04:22 | INFO | M06 | github_actions=False
+2026-08-09 08:04:22 | INFO | M06 | Loading model from: artifacts\model.joblib
+2026-08-09 08:04:22 | INFO | M06 | Model loaded successfully
+2026-08-09 08:04:22 | INFO | M06 | === RUN START ===
+2026-08-09 08:04:22 | INFO | M06 | project=M06
+2026-08-09 08:04:22 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:04:22 | INFO | M06 | python=3.14.3
+2026-08-09 08:04:22 | INFO | M06 | os=Windows 11
+2026-08-09 08:04:22 | INFO | M06 | shell=powershell
+2026-08-09 08:04:22 | INFO | M06 | cwd=.
+2026-08-09 08:04:22 | INFO | M06 | github_actions=False
+2026-08-09 08:04:22 | INFO | M06 | Confirming installation:
+2026-08-09 08:04:22 | INFO | M06 |   python:       3.14.3
+2026-08-09 08:04:22 | INFO | M06 |   pandas:       3.0.5
+2026-08-09 08:04:22 | INFO | M06 | Model artifact will be saved to: artifacts\model2.joblib
+2026-08-09 08:05:08 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:05:08 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:05:08 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 08:05:08 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 08:05:08 | INFO | M06 | Model rows: 768
+2026-08-09 08:11:34 | INFO | M06 | === RUN START ===
+2026-08-09 08:11:34 | INFO | M06 | project=M06
+2026-08-09 08:11:34 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:11:34 | INFO | M06 | python=3.14.3
+2026-08-09 08:11:34 | INFO | M06 | os=Windows 11
+2026-08-09 08:11:34 | INFO | M06 | shell=powershell
+2026-08-09 08:11:34 | INFO | M06 | cwd=.
+2026-08-09 08:11:34 | INFO | M06 | github_actions=False
+2026-08-09 08:11:34 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:11:34 | INFO | M06 | Model loaded successfully
+2026-08-09 08:11:38 | INFO | M06 | === RUN START ===
+2026-08-09 08:11:38 | INFO | M06 | project=M06
+2026-08-09 08:11:38 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:11:38 | INFO | M06 | python=3.14.3
+2026-08-09 08:11:38 | INFO | M06 | os=Windows 11
+2026-08-09 08:11:38 | INFO | M06 | shell=powershell
+2026-08-09 08:11:38 | INFO | M06 | cwd=.
+2026-08-09 08:11:38 | INFO | M06 | github_actions=False
+2026-08-09 08:11:38 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:11:38 | INFO | M06 | Model loaded successfully
+2026-08-09 08:12:50 | INFO | M06 | === RUN START ===
+2026-08-09 08:12:50 | INFO | M06 | project=M06
+2026-08-09 08:12:50 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:12:50 | INFO | M06 | python=3.14.3
+2026-08-09 08:12:50 | INFO | M06 | os=Windows 11
+2026-08-09 08:12:50 | INFO | M06 | shell=powershell
+2026-08-09 08:12:50 | INFO | M06 | cwd=.
+2026-08-09 08:12:50 | INFO | M06 | github_actions=False
+2026-08-09 08:12:50 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:12:50 | INFO | M06 | Model loaded successfully
+2026-08-09 08:12:55 | INFO | M06 | === RUN START ===
+2026-08-09 08:12:55 | INFO | M06 | project=M06
+2026-08-09 08:12:55 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:12:55 | INFO | M06 | python=3.14.3
+2026-08-09 08:12:55 | INFO | M06 | os=Windows 11
+2026-08-09 08:12:55 | INFO | M06 | shell=powershell
+2026-08-09 08:12:55 | INFO | M06 | cwd=.
+2026-08-09 08:12:55 | INFO | M06 | github_actions=False
+2026-08-09 08:12:55 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:12:55 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:00 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:00 | INFO | M06 | project=M06
+2026-08-09 08:13:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:00 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:00 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:00 | INFO | M06 | shell=powershell
+2026-08-09 08:13:00 | INFO | M06 | cwd=.
+2026-08-09 08:13:00 | INFO | M06 | github_actions=False
+2026-08-09 08:13:00 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:00 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:06 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:06 | INFO | M06 | project=M06
+2026-08-09 08:13:06 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:06 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:06 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:06 | INFO | M06 | shell=powershell
+2026-08-09 08:13:06 | INFO | M06 | cwd=.
+2026-08-09 08:13:06 | INFO | M06 | github_actions=False
+2026-08-09 08:13:06 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:06 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:11 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:11 | INFO | M06 | project=M06
+2026-08-09 08:13:11 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:11 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:11 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:11 | INFO | M06 | shell=powershell
+2026-08-09 08:13:11 | INFO | M06 | cwd=.
+2026-08-09 08:13:11 | INFO | M06 | github_actions=False
+2026-08-09 08:13:11 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:11 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:24 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:24 | INFO | M06 | project=M06
+2026-08-09 08:13:24 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:24 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:24 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:24 | INFO | M06 | shell=powershell
+2026-08-09 08:13:24 | INFO | M06 | cwd=.
+2026-08-09 08:13:24 | INFO | M06 | github_actions=False
+2026-08-09 08:13:24 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:24 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:29 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:29 | INFO | M06 | project=M06
+2026-08-09 08:13:29 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:29 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:29 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:29 | INFO | M06 | shell=powershell
+2026-08-09 08:13:29 | INFO | M06 | cwd=.
+2026-08-09 08:13:29 | INFO | M06 | github_actions=False
+2026-08-09 08:13:29 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:29 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:34 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:34 | INFO | M06 | project=M06
+2026-08-09 08:13:34 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:34 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:34 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:34 | INFO | M06 | shell=powershell
+2026-08-09 08:13:34 | INFO | M06 | cwd=.
+2026-08-09 08:13:34 | INFO | M06 | github_actions=False
+2026-08-09 08:13:34 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:34 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:39 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:39 | INFO | M06 | project=M06
+2026-08-09 08:13:39 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:39 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:39 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:39 | INFO | M06 | shell=powershell
+2026-08-09 08:13:39 | INFO | M06 | cwd=.
+2026-08-09 08:13:39 | INFO | M06 | github_actions=False
+2026-08-09 08:13:39 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:39 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:44 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:44 | INFO | M06 | project=M06
+2026-08-09 08:13:44 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:44 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:44 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:44 | INFO | M06 | shell=powershell
+2026-08-09 08:13:44 | INFO | M06 | cwd=.
+2026-08-09 08:13:44 | INFO | M06 | github_actions=False
+2026-08-09 08:13:44 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:44 | INFO | M06 | Model loaded successfully
+2026-08-09 08:13:49 | INFO | M06 | === RUN START ===
+2026-08-09 08:13:49 | INFO | M06 | project=M06
+2026-08-09 08:13:49 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:13:49 | INFO | M06 | python=3.14.3
+2026-08-09 08:13:49 | INFO | M06 | os=Windows 11
+2026-08-09 08:13:49 | INFO | M06 | shell=powershell
+2026-08-09 08:13:49 | INFO | M06 | cwd=.
+2026-08-09 08:13:49 | INFO | M06 | github_actions=False
+2026-08-09 08:13:49 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:13:49 | INFO | M06 | Model loaded successfully
+2026-08-09 08:14:00 | INFO | M06 | === RUN START ===
+2026-08-09 08:14:00 | INFO | M06 | project=M06
+2026-08-09 08:14:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:14:00 | INFO | M06 | python=3.14.3
+2026-08-09 08:14:00 | INFO | M06 | os=Windows 11
+2026-08-09 08:14:00 | INFO | M06 | shell=powershell
+2026-08-09 08:14:00 | INFO | M06 | cwd=.
+2026-08-09 08:14:00 | INFO | M06 | github_actions=False
+2026-08-09 08:14:00 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:14:00 | INFO | M06 | Model loaded successfully
+2026-08-09 08:14:06 | INFO | M06 | === RUN START ===
+2026-08-09 08:14:06 | INFO | M06 | project=M06
+2026-08-09 08:14:06 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:14:06 | INFO | M06 | python=3.14.3
+2026-08-09 08:14:06 | INFO | M06 | os=Windows 11
+2026-08-09 08:14:06 | INFO | M06 | shell=powershell
+2026-08-09 08:14:06 | INFO | M06 | cwd=.
+2026-08-09 08:14:06 | INFO | M06 | github_actions=False
+2026-08-09 08:14:06 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:14:06 | INFO | M06 | Model loaded successfully
+2026-08-09 08:14:11 | INFO | M06 | === RUN START ===
+2026-08-09 08:14:11 | INFO | M06 | project=M06
+2026-08-09 08:14:11 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:14:11 | INFO | M06 | python=3.14.3
+2026-08-09 08:14:11 | INFO | M06 | os=Windows 11
+2026-08-09 08:14:11 | INFO | M06 | shell=powershell
+2026-08-09 08:14:11 | INFO | M06 | cwd=.
+2026-08-09 08:14:11 | INFO | M06 | github_actions=False
+2026-08-09 08:14:11 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:14:11 | INFO | M06 | Model loaded successfully
+2026-08-09 08:14:23 | INFO | M06 | === RUN START ===
+2026-08-09 08:14:23 | INFO | M06 | project=M06
+2026-08-09 08:14:23 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:14:23 | INFO | M06 | python=3.14.3
+2026-08-09 08:14:23 | INFO | M06 | os=Windows 11
+2026-08-09 08:14:23 | INFO | M06 | shell=powershell
+2026-08-09 08:14:23 | INFO | M06 | cwd=.
+2026-08-09 08:14:23 | INFO | M06 | github_actions=False
+2026-08-09 08:14:23 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:14:23 | INFO | M06 | Model loaded successfully
+2026-08-09 08:15:14 | INFO | M06 | === RUN START ===
+2026-08-09 08:15:14 | INFO | M06 | project=M06
+2026-08-09 08:15:14 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:15:14 | INFO | M06 | python=3.14.3
+2026-08-09 08:15:14 | INFO | M06 | os=Windows 11
+2026-08-09 08:15:14 | INFO | M06 | shell=powershell
+2026-08-09 08:15:14 | INFO | M06 | cwd=.
+2026-08-09 08:15:14 | INFO | M06 | github_actions=False
+2026-08-09 08:15:14 | INFO | M06 | Load data.................
+2026-08-09 08:15:14 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:15:14 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 08:15:14 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 08:15:14 | INFO | M06 | Add Column.................
+2026-08-09 08:15:14 | INFO | M06 | Split data................
+2026-08-09 08:15:14 | INFO | M06 | Train instances: 614
+2026-08-09 08:15:14 | INFO | M06 | Test instances:  154
+2026-08-09 08:15:14 | INFO | M06 | Train model...............
+2026-08-09 08:15:14 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 08:15:15 | INFO | M06 | Training complete
+2026-08-09 08:15:15 | INFO | M06 | Evaluate model............
+2026-08-09 08:15:15 | INFO | M06 | Test accuracy: 0.721
+2026-08-09 08:15:15 | INFO | M06 | Save model................
+2026-08-09 08:15:15 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 08:15:15 | INFO | M06 | Summarize.................
+2026-08-09 08:15:15 | INFO | M06 | ========================
+2026-08-09 08:15:15 | INFO | M06 | SUMMARY
+2026-08-09 08:15:15 | INFO | M06 | ========================
+2026-08-09 08:15:15 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 08:15:15 | INFO | M06 | Target:   diabetic
+2026-08-09 08:15:15 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 08:15:15 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 08:15:15 | INFO | M06 | ========================
+2026-08-09 08:15:15 | INFO | M06 | ========================
+2026-08-09 08:15:15 | INFO | M06 | Executed successfully!
+2026-08-09 08:15:15 | INFO | M06 | ========================
+2026-08-09 08:16:56 | INFO | M06 | === RUN START ===
+2026-08-09 08:16:56 | INFO | M06 | project=M06
+2026-08-09 08:16:56 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:16:56 | INFO | M06 | python=3.14.3
+2026-08-09 08:16:56 | INFO | M06 | os=Windows 11
+2026-08-09 08:16:56 | INFO | M06 | shell=powershell
+2026-08-09 08:16:56 | INFO | M06 | cwd=.
+2026-08-09 08:16:56 | INFO | M06 | github_actions=False
+2026-08-09 08:16:56 | INFO | M06 | Load data.................
+2026-08-09 08:16:56 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:16:56 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 08:16:56 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 08:16:56 | INFO | M06 | Split data................
+2026-08-09 08:16:56 | INFO | M06 | Train instances: 614
+2026-08-09 08:16:56 | INFO | M06 | Test instances:  154
+2026-08-09 08:16:56 | INFO | M06 | Train model...............
+2026-08-09 08:16:56 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 08:16:56 | INFO | M06 | Training complete
+2026-08-09 08:16:56 | INFO | M06 | Evaluate model............
+2026-08-09 08:16:56 | INFO | M06 | Test accuracy: 0.721
+2026-08-09 08:16:56 | INFO | M06 | Save model................
+2026-08-09 08:16:57 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 08:16:57 | INFO | M06 | Summarize.................
+2026-08-09 08:16:57 | INFO | M06 | ========================
+2026-08-09 08:16:57 | INFO | M06 | SUMMARY
+2026-08-09 08:16:57 | INFO | M06 | ========================
+2026-08-09 08:16:57 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 08:16:57 | INFO | M06 | Target:   diabetic
+2026-08-09 08:16:57 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 08:16:57 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 08:16:57 | INFO | M06 | ========================
+2026-08-09 08:16:57 | INFO | M06 | ========================
+2026-08-09 08:16:57 | INFO | M06 | Executed successfully!
+2026-08-09 08:16:57 | INFO | M06 | ========================
+2026-08-09 08:17:47 | INFO | M06 | === RUN START ===
+2026-08-09 08:17:47 | INFO | M06 | project=M06
+2026-08-09 08:17:47 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:17:47 | INFO | M06 | python=3.14.3
+2026-08-09 08:17:47 | INFO | M06 | os=Windows 11
+2026-08-09 08:17:47 | INFO | M06 | shell=powershell
+2026-08-09 08:17:47 | INFO | M06 | cwd=.
+2026-08-09 08:17:47 | INFO | M06 | github_actions=False
+2026-08-09 08:17:47 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:17:47 | INFO | M06 | Model loaded successfully
+2026-08-09 08:17:51 | INFO | M06 | === RUN START ===
+2026-08-09 08:17:51 | INFO | M06 | project=M06
+2026-08-09 08:17:51 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:17:51 | INFO | M06 | python=3.14.3
+2026-08-09 08:17:51 | INFO | M06 | os=Windows 11
+2026-08-09 08:17:51 | INFO | M06 | shell=powershell
+2026-08-09 08:17:51 | INFO | M06 | cwd=.
+2026-08-09 08:17:51 | INFO | M06 | github_actions=False
+2026-08-09 08:17:51 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 08:17:51 | INFO | M06 | Model loaded successfully
+2026-08-09 08:19:32 | INFO | M06 | === RUN START ===
+2026-08-09 08:19:32 | INFO | M06 | project=M06
+2026-08-09 08:19:32 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 08:19:32 | INFO | M06 | python=3.14.3
+2026-08-09 08:19:32 | INFO | M06 | os=Windows 11
+2026-08-09 08:19:32 | INFO | M06 | shell=powershell
+2026-08-09 08:19:32 | INFO | M06 | cwd=.
+2026-08-09 08:19:32 | INFO | M06 | github_actions=False
+2026-08-09 08:19:32 | INFO | M06 | Confirming installation:
+2026-08-09 08:19:32 | INFO | M06 |   python:       3.14.3
+2026-08-09 08:19:32 | INFO | M06 |   pandas:       3.0.5
+2026-08-09 08:19:32 | INFO | M06 | Model artifact will be saved to: artifacts\model2.joblib
+2026-08-09 08:19:38 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:19:38 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:19:38 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 08:19:38 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 08:19:38 | INFO | M06 | Model rows: 768
+2026-08-09 08:26:12 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:26:12 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 08:26:12 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 08:26:12 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 08:26:12 | INFO | M06 | Model rows: 768
+2026-08-09 13:34:09 | INFO | M05 | === RUN START ===
+2026-08-09 13:34:09 | INFO | M05 | project=M05
+2026-08-09 13:34:09 | INFO | M05 | repo_dir=ml-06-serving
+2026-08-09 13:34:09 | INFO | M05 | python=3.14.3
+2026-08-09 13:34:09 | INFO | M05 | os=Windows 11
+2026-08-09 13:34:09 | INFO | M05 | shell=powershell
+2026-08-09 13:34:09 | INFO | M05 | cwd=project06
+2026-08-09 13:34:09 | INFO | M05 | github_actions=False
+2026-08-09 13:34:09 | INFO | M05 | Confirming installation:
+2026-08-09 13:34:09 | INFO | M05 |   python:       3.14.3
+2026-08-09 13:34:09 | INFO | M05 |   pandas:       3.0.5
+2026-08-09 13:34:09 | INFO | M05 |   numpy:        2.5.1
+2026-08-09 13:34:09 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-09 13:34:09 | INFO | M05 |   seaborn:      0.13.2
+2026-08-09 13:34:09 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-09 13:34:14 | INFO | M05 | Loading dataset: diabetes_data.csv
+2026-08-09 13:34:14 | INFO | M05 | Loaded: 768 rows (instances), 9 columns
+2026-08-09 13:34:14 | INFO | M05 | Original rows: 768
+2026-08-09 13:34:14 | INFO | M05 | Model rows:    768
+2026-08-09 13:34:14 | INFO | M05 | Classes in target 'outcome': [np.int64(0), np.int64(1)]
+2026-08-09 13:34:14 | DEBUG | M05 | Class counts:
+outcome
+0    500
+1    268
+Name: count, dtype: int64
+2026-08-09 13:34:26 | INFO | M05 | Train instances: 614
+2026-08-09 13:34:26 | INFO | M05 | Test instances: 154
+2026-08-09 13:34:30 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-09 13:34:30 | DEBUG | M05 |   fitted: single_tree
+2026-08-09 13:34:31 | DEBUG | M05 |   fitted: random_forest
+2026-08-09 13:34:31 | DEBUG | M05 |   fitted: voting classifier
+2026-08-09 13:35:01 | INFO | M06 | === RUN START ===
+2026-08-09 13:35:01 | INFO | M06 | project=M06
+2026-08-09 13:35:01 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:35:01 | INFO | M06 | python=3.14.3
+2026-08-09 13:35:01 | INFO | M06 | os=Windows 11
+2026-08-09 13:35:01 | INFO | M06 | shell=powershell
+2026-08-09 13:35:01 | INFO | M06 | cwd=.
+2026-08-09 13:35:01 | INFO | M06 | github_actions=False
+2026-08-09 13:35:01 | INFO | M06 | Confirming installation:
+2026-08-09 13:35:01 | INFO | M06 |   python:       3.14.3
+2026-08-09 13:35:01 | INFO | M06 |   pandas:       3.0.5
+2026-08-09 13:35:01 | INFO | M06 | Model artifact will be saved to: artifacts\model2.joblib
+2026-08-09 13:35:08 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:35:08 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:35:08 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:35:08 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:35:08 | INFO | M06 | Model rows: 768
+2026-08-09 13:36:36 | INFO | M06 | === RUN START ===
+2026-08-09 13:36:36 | INFO | M06 | project=M06
+2026-08-09 13:36:36 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:36:36 | INFO | M06 | python=3.14.3
+2026-08-09 13:36:36 | INFO | M06 | os=Windows 11
+2026-08-09 13:36:36 | INFO | M06 | shell=powershell
+2026-08-09 13:36:36 | INFO | M06 | cwd=.
+2026-08-09 13:36:36 | INFO | M06 | github_actions=False
+2026-08-09 13:36:36 | INFO | M06 | Load data.................
+2026-08-09 13:36:36 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:36:36 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:36:36 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:36:36 | INFO | M06 | Split data................
+2026-08-09 13:36:36 | INFO | M06 | Train instances: 614
+2026-08-09 13:36:36 | INFO | M06 | Test instances:  154
+2026-08-09 13:36:36 | INFO | M06 | Train model...............
+2026-08-09 13:36:36 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 13:36:37 | INFO | M06 | Training complete
+2026-08-09 13:36:37 | INFO | M06 | Evaluate model............
+2026-08-09 13:36:37 | INFO | M06 | Test accuracy: 0.721
+2026-08-09 13:36:37 | INFO | M06 | Save model................
+2026-08-09 13:36:37 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 13:36:37 | INFO | M06 | Summarize.................
+2026-08-09 13:36:37 | INFO | M06 | ========================
+2026-08-09 13:36:37 | INFO | M06 | SUMMARY
+2026-08-09 13:36:37 | INFO | M06 | ========================
+2026-08-09 13:36:37 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 13:36:37 | INFO | M06 | Target:   diabetic
+2026-08-09 13:36:37 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 13:36:37 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 13:36:37 | INFO | M06 | ========================
+2026-08-09 13:36:37 | INFO | M06 | ========================
+2026-08-09 13:36:37 | INFO | M06 | Executed successfully!
+2026-08-09 13:36:37 | INFO | M06 | ========================
+2026-08-09 13:37:33 | INFO | M06 | === RUN START ===
+2026-08-09 13:37:33 | INFO | M06 | project=M06
+2026-08-09 13:37:33 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:37:33 | INFO | M06 | python=3.14.3
+2026-08-09 13:37:33 | INFO | M06 | os=Windows 11
+2026-08-09 13:37:33 | INFO | M06 | shell=powershell
+2026-08-09 13:37:33 | INFO | M06 | cwd=.
+2026-08-09 13:37:33 | INFO | M06 | github_actions=False
+2026-08-09 13:37:33 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 13:37:33 | INFO | M06 | Model loaded successfully
+2026-08-09 13:37:38 | INFO | M06 | === RUN START ===
+2026-08-09 13:37:38 | INFO | M06 | project=M06
+2026-08-09 13:37:38 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:37:38 | INFO | M06 | python=3.14.3
+2026-08-09 13:37:38 | INFO | M06 | os=Windows 11
+2026-08-09 13:37:38 | INFO | M06 | shell=powershell
+2026-08-09 13:37:38 | INFO | M06 | cwd=.
+2026-08-09 13:37:38 | INFO | M06 | github_actions=False
+2026-08-09 13:37:38 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 13:37:38 | INFO | M06 | Model loaded successfully
+2026-08-09 13:38:27 | INFO | M06 | === RUN START ===
+2026-08-09 13:38:27 | INFO | M06 | project=M06
+2026-08-09 13:38:27 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:38:27 | INFO | M06 | python=3.14.3
+2026-08-09 13:38:27 | INFO | M06 | os=Windows 11
+2026-08-09 13:38:27 | INFO | M06 | shell=powershell
+2026-08-09 13:38:27 | INFO | M06 | cwd=.
+2026-08-09 13:38:27 | INFO | M06 | github_actions=False
+2026-08-09 13:38:27 | INFO | M06 | Confirming installation:
+2026-08-09 13:38:27 | INFO | M06 |   python:       3.14.3
+2026-08-09 13:38:27 | INFO | M06 |   pandas:       3.0.5
+2026-08-09 13:38:27 | INFO | M06 | Model artifact will be saved to: artifacts\model2.joblib
+2026-08-09 13:38:50 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:38:50 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:38:50 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:38:50 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:38:50 | INFO | M06 | Model rows: 768
+2026-08-09 13:40:10 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:40:10 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:40:10 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:40:10 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:40:10 | INFO | M06 | Model rows: 768
+2026-08-09 13:40:10 | INFO | M06 | Classes in 'diabetic': ['Diabetic', 'Not Diabetic']
+2026-08-09 13:40:17 | INFO | M06 | Train instances: 614
+2026-08-09 13:40:17 | INFO | M06 | Test instances:  154
+2026-08-09 13:40:17 | INFO | M06 | Train instances: 614
+2026-08-09 13:40:17 | INFO | M06 | Test instances:  154
+2026-08-09 13:40:34 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 13:40:35 | INFO | M06 | Training complete
+2026-08-09 13:40:35 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 13:40:36 | INFO | M06 | Reloaded model from: artifacts\model2.joblib
+2026-08-09 13:43:38 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 13:43:38 | INFO | M06 | Training complete
+2026-08-09 13:43:39 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 13:43:39 | INFO | M06 | Reloaded model from: artifacts\model2.joblib
+2026-08-09 13:49:50 | INFO | M06 | === RUN START ===
+2026-08-09 13:49:50 | INFO | M06 | project=M06
+2026-08-09 13:49:50 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:49:50 | INFO | M06 | python=3.14.3
+2026-08-09 13:49:50 | INFO | M06 | os=Windows 11
+2026-08-09 13:49:50 | INFO | M06 | shell=powershell
+2026-08-09 13:49:50 | INFO | M06 | cwd=.
+2026-08-09 13:49:50 | INFO | M06 | github_actions=False
+2026-08-09 13:49:50 | INFO | M06 | Confirming installation:
+2026-08-09 13:49:50 | INFO | M06 |   python:       3.14.3
+2026-08-09 13:49:50 | INFO | M06 |   pandas:       3.0.5
+2026-08-09 13:49:50 | INFO | M06 | Model artifact will be saved to: artifacts\model2.joblib
+2026-08-09 13:49:59 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:49:59 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:49:59 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:49:59 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:49:59 | INFO | M06 | Model rows: 768
+2026-08-09 13:49:59 | INFO | M06 | Classes in 'diabetic': ['Diabetic', 'Not Diabetic']
+2026-08-09 13:51:06 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:51:06 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:51:06 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:51:06 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:51:06 | INFO | M06 | Model rows: 768
+2026-08-09 13:51:06 | INFO | M06 | Classes in 'diabetic': ['Diabetic', 'Not Diabetic']
+2026-08-09 13:51:06 | INFO | M06 | Feature Columns: '['glucose', 'BMI', 'age']
+2026-08-09 13:51:11 | INFO | M06 | Train instances: 614
+2026-08-09 13:51:11 | INFO | M06 | Test instances:  154
+2026-08-09 13:51:11 | INFO | M06 | Train instances: 614
+2026-08-09 13:51:11 | INFO | M06 | Test instances:  154
+2026-08-09 13:51:17 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 13:51:18 | INFO | M06 | Training complete
+2026-08-09 13:51:18 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 13:51:18 | INFO | M06 | Reloaded model from: artifacts\model2.joblib
+2026-08-09 13:54:00 | INFO | M06 | === RUN START ===
+2026-08-09 13:54:00 | INFO | M06 | project=M06
+2026-08-09 13:54:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:54:00 | INFO | M06 | python=3.14.3
+2026-08-09 13:54:00 | INFO | M06 | os=Windows 11
+2026-08-09 13:54:00 | INFO | M06 | shell=powershell
+2026-08-09 13:54:00 | INFO | M06 | cwd=.
+2026-08-09 13:54:00 | INFO | M06 | github_actions=False
+2026-08-09 13:54:00 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 13:54:00 | INFO | M06 | Model loaded successfully
+2026-08-09 13:54:19 | INFO | M06 | === RUN START ===
+2026-08-09 13:54:19 | INFO | M06 | project=M06
+2026-08-09 13:54:19 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:54:19 | INFO | M06 | python=3.14.3
+2026-08-09 13:54:19 | INFO | M06 | os=Windows 11
+2026-08-09 13:54:19 | INFO | M06 | shell=powershell
+2026-08-09 13:54:19 | INFO | M06 | cwd=.
+2026-08-09 13:54:19 | INFO | M06 | github_actions=False
+2026-08-09 13:54:19 | INFO | M06 | Confirming installation:
+2026-08-09 13:54:19 | INFO | M06 |   python:       3.14.3
+2026-08-09 13:54:19 | INFO | M06 |   pandas:       3.0.5
+2026-08-09 13:54:19 | INFO | M06 | Model artifact will be saved to: artifacts\model2.joblib
+2026-08-09 13:54:26 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:54:26 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 13:54:26 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 13:54:26 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 13:54:26 | INFO | M06 | Model rows: 768
+2026-08-09 13:54:26 | INFO | M06 | Classes in 'diabetic': ['Diabetic', 'Not Diabetic']
+2026-08-09 13:54:26 | INFO | M06 | Feature Columns: '['glucose', 'BMI', 'age']
+2026-08-09 13:54:30 | INFO | M06 | Train instances: 614
+2026-08-09 13:54:30 | INFO | M06 | Test instances:  154
+2026-08-09 13:54:30 | INFO | M06 | Train instances: 614
+2026-08-09 13:54:30 | INFO | M06 | Test instances:  154
+2026-08-09 13:54:33 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 13:54:33 | INFO | M06 | Training complete
+2026-08-09 13:54:34 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 13:54:34 | INFO | M06 | Reloaded model from: artifacts\model2.joblib
+2026-08-09 13:54:37 | INFO | M06 | Valid payload -> {'prediction': 'Not Diabetic'}
+2026-08-09 13:54:37 | INFO | M06 | Invalid payload handled cleanly -> ValueError: Missing required feature: 'BMI'
+2026-08-09 13:54:49 | INFO | M06 | ========================
+2026-08-09 13:54:49 | INFO | M06 | SUMMARY
+2026-08-09 13:54:49 | INFO | M06 | ========================
+2026-08-09 13:54:49 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 13:54:49 | INFO | M06 | Target:   diabetic
+2026-08-09 13:54:49 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 13:54:49 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 13:54:49 | INFO | M06 | ========================
+2026-08-09 13:59:03 | INFO | M06 | === RUN START ===
+2026-08-09 13:59:03 | INFO | M06 | project=M06
+2026-08-09 13:59:03 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:59:03 | INFO | M06 | python=3.14.3
+2026-08-09 13:59:03 | INFO | M06 | os=Windows 11
+2026-08-09 13:59:03 | INFO | M06 | shell=powershell
+2026-08-09 13:59:03 | INFO | M06 | cwd=.
+2026-08-09 13:59:03 | INFO | M06 | github_actions=False
+2026-08-09 13:59:03 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 13:59:03 | INFO | M06 | Model loaded successfully
+2026-08-09 13:59:08 | INFO | M06 | === RUN START ===
+2026-08-09 13:59:08 | INFO | M06 | project=M06
+2026-08-09 13:59:08 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:59:08 | INFO | M06 | python=3.14.3
+2026-08-09 13:59:08 | INFO | M06 | os=Windows 11
+2026-08-09 13:59:08 | INFO | M06 | shell=powershell
+2026-08-09 13:59:08 | INFO | M06 | cwd=.
+2026-08-09 13:59:08 | INFO | M06 | github_actions=False
+2026-08-09 13:59:08 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 13:59:08 | INFO | M06 | Model loaded successfully
+2026-08-09 13:59:24 | INFO | M06 | === RUN START ===
+2026-08-09 13:59:24 | INFO | M06 | project=M06
+2026-08-09 13:59:24 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 13:59:24 | INFO | M06 | python=3.14.3
+2026-08-09 13:59:24 | INFO | M06 | os=Windows 11
+2026-08-09 13:59:24 | INFO | M06 | shell=powershell
+2026-08-09 13:59:24 | INFO | M06 | cwd=.
+2026-08-09 13:59:24 | INFO | M06 | github_actions=False
+2026-08-09 13:59:24 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 13:59:24 | INFO | M06 | Model loaded successfully
+2026-08-09 14:00:49 | INFO | M06 | === RUN START ===
+2026-08-09 14:00:49 | INFO | M06 | project=M06
+2026-08-09 14:00:49 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:00:49 | INFO | M06 | python=3.14.3
+2026-08-09 14:00:49 | INFO | M06 | os=Windows 11
+2026-08-09 14:00:49 | INFO | M06 | shell=powershell
+2026-08-09 14:00:49 | INFO | M06 | cwd=.
+2026-08-09 14:00:49 | INFO | M06 | github_actions=False
+2026-08-09 14:00:49 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:00:49 | INFO | M06 | Model loaded successfully
+2026-08-09 14:00:55 | INFO | M06 | === RUN START ===
+2026-08-09 14:00:55 | INFO | M06 | project=M06
+2026-08-09 14:00:55 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:00:55 | INFO | M06 | python=3.14.3
+2026-08-09 14:00:55 | INFO | M06 | os=Windows 11
+2026-08-09 14:00:55 | INFO | M06 | shell=powershell
+2026-08-09 14:00:55 | INFO | M06 | cwd=.
+2026-08-09 14:00:55 | INFO | M06 | github_actions=False
+2026-08-09 14:00:55 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:00:55 | INFO | M06 | Model loaded successfully
+2026-08-09 14:01:00 | INFO | M06 | === RUN START ===
+2026-08-09 14:01:00 | INFO | M06 | project=M06
+2026-08-09 14:01:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:01:00 | INFO | M06 | python=3.14.3
+2026-08-09 14:01:00 | INFO | M06 | os=Windows 11
+2026-08-09 14:01:00 | INFO | M06 | shell=powershell
+2026-08-09 14:01:00 | INFO | M06 | cwd=.
+2026-08-09 14:01:00 | INFO | M06 | github_actions=False
+2026-08-09 14:01:00 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:01:00 | INFO | M06 | Model loaded successfully
+2026-08-09 14:01:42 | INFO | M06 | === RUN START ===
+2026-08-09 14:01:42 | INFO | M06 | project=M06
+2026-08-09 14:01:42 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:01:42 | INFO | M06 | python=3.14.3
+2026-08-09 14:01:42 | INFO | M06 | os=Windows 11
+2026-08-09 14:01:42 | INFO | M06 | shell=powershell
+2026-08-09 14:01:42 | INFO | M06 | cwd=.
+2026-08-09 14:01:42 | INFO | M06 | github_actions=False
+2026-08-09 14:01:42 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:01:42 | INFO | M06 | Model loaded successfully
+2026-08-09 14:04:34 | INFO | M06 | === RUN START ===
+2026-08-09 14:04:34 | INFO | M06 | project=M06
+2026-08-09 14:04:34 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:04:34 | INFO | M06 | python=3.14.3
+2026-08-09 14:04:34 | INFO | M06 | os=Windows 11
+2026-08-09 14:04:34 | INFO | M06 | shell=powershell
+2026-08-09 14:04:34 | INFO | M06 | cwd=.
+2026-08-09 14:04:34 | INFO | M06 | github_actions=False
+2026-08-09 14:04:34 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:04:34 | INFO | M06 | Model loaded successfully
+2026-08-09 14:05:09 | INFO | M06 | === RUN START ===
+2026-08-09 14:05:09 | INFO | M06 | project=M06
+2026-08-09 14:05:09 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:05:09 | INFO | M06 | python=3.14.3
+2026-08-09 14:05:09 | INFO | M06 | os=Windows 11
+2026-08-09 14:05:09 | INFO | M06 | shell=powershell
+2026-08-09 14:05:09 | INFO | M06 | cwd=.
+2026-08-09 14:05:09 | INFO | M06 | github_actions=False
+2026-08-09 14:05:09 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:05:09 | INFO | M06 | Model loaded successfully
+2026-08-09 14:05:13 | INFO | M06 | === RUN START ===
+2026-08-09 14:05:13 | INFO | M06 | project=M06
+2026-08-09 14:05:13 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:05:13 | INFO | M06 | python=3.14.3
+2026-08-09 14:05:13 | INFO | M06 | os=Windows 11
+2026-08-09 14:05:13 | INFO | M06 | shell=powershell
+2026-08-09 14:05:13 | INFO | M06 | cwd=.
+2026-08-09 14:05:13 | INFO | M06 | github_actions=False
+2026-08-09 14:05:13 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:05:13 | INFO | M06 | Model loaded successfully
+2026-08-09 14:18:21 | INFO | M06 | === RUN START ===
+2026-08-09 14:18:21 | INFO | M06 | project=M06
+2026-08-09 14:18:21 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:18:21 | INFO | M06 | python=3.14.3
+2026-08-09 14:18:21 | INFO | M06 | os=Windows 11
+2026-08-09 14:18:21 | INFO | M06 | shell=powershell
+2026-08-09 14:18:21 | INFO | M06 | cwd=.
+2026-08-09 14:18:21 | INFO | M06 | github_actions=False
+2026-08-09 14:18:21 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:18:21 | INFO | M06 | Model loaded successfully
+2026-08-09 14:18:32 | INFO | M06 | === RUN START ===
+2026-08-09 14:18:32 | INFO | M06 | project=M06
+2026-08-09 14:18:32 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:18:32 | INFO | M06 | python=3.14.3
+2026-08-09 14:18:32 | INFO | M06 | os=Windows 11
+2026-08-09 14:18:32 | INFO | M06 | shell=powershell
+2026-08-09 14:18:32 | INFO | M06 | cwd=.
+2026-08-09 14:18:32 | INFO | M06 | github_actions=False
+2026-08-09 14:18:32 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:18:32 | INFO | M06 | Model loaded successfully
+2026-08-09 14:24:18 | INFO | M06 | === RUN START ===
+2026-08-09 14:24:18 | INFO | M06 | project=M06
+2026-08-09 14:24:18 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:24:18 | INFO | M06 | python=3.14.3
+2026-08-09 14:24:18 | INFO | M06 | os=Windows 11
+2026-08-09 14:24:18 | INFO | M06 | shell=powershell
+2026-08-09 14:24:18 | INFO | M06 | cwd=.
+2026-08-09 14:24:18 | INFO | M06 | github_actions=False
+2026-08-09 14:24:18 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:24:19 | INFO | M06 | Model loaded successfully
+2026-08-09 14:25:35 | INFO | M06 | === RUN START ===
+2026-08-09 14:25:35 | INFO | M06 | project=M06
+2026-08-09 14:25:35 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:25:35 | INFO | M06 | python=3.14.3
+2026-08-09 14:25:35 | INFO | M06 | os=Windows 11
+2026-08-09 14:25:35 | INFO | M06 | shell=powershell
+2026-08-09 14:25:35 | INFO | M06 | cwd=.
+2026-08-09 14:25:35 | INFO | M06 | github_actions=False
+2026-08-09 14:25:35 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:25:35 | INFO | M06 | Model loaded successfully
+2026-08-09 14:25:40 | INFO | M06 | === RUN START ===
+2026-08-09 14:25:40 | INFO | M06 | project=M06
+2026-08-09 14:25:40 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:25:40 | INFO | M06 | python=3.14.3
+2026-08-09 14:25:40 | INFO | M06 | os=Windows 11
+2026-08-09 14:25:40 | INFO | M06 | shell=powershell
+2026-08-09 14:25:40 | INFO | M06 | cwd=.
+2026-08-09 14:25:40 | INFO | M06 | github_actions=False
+2026-08-09 14:25:40 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:25:41 | INFO | M06 | Model loaded successfully
+2026-08-09 14:25:49 | INFO | M06 | === RUN START ===
+2026-08-09 14:25:49 | INFO | M06 | project=M06
+2026-08-09 14:25:49 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:25:49 | INFO | M06 | python=3.14.3
+2026-08-09 14:25:49 | INFO | M06 | os=Windows 11
+2026-08-09 14:25:49 | INFO | M06 | shell=powershell
+2026-08-09 14:25:49 | INFO | M06 | cwd=.
+2026-08-09 14:25:49 | INFO | M06 | github_actions=False
+2026-08-09 14:25:49 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:25:49 | INFO | M06 | Model loaded successfully
+2026-08-09 14:25:55 | INFO | M06 | === RUN START ===
+2026-08-09 14:25:55 | INFO | M06 | project=M06
+2026-08-09 14:25:55 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:25:55 | INFO | M06 | python=3.14.3
+2026-08-09 14:25:55 | INFO | M06 | os=Windows 11
+2026-08-09 14:25:55 | INFO | M06 | shell=powershell
+2026-08-09 14:25:55 | INFO | M06 | cwd=.
+2026-08-09 14:25:55 | INFO | M06 | github_actions=False
+2026-08-09 14:25:55 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:25:55 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:00 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:00 | INFO | M06 | project=M06
+2026-08-09 14:26:00 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:00 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:00 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:00 | INFO | M06 | shell=powershell
+2026-08-09 14:26:00 | INFO | M06 | cwd=.
+2026-08-09 14:26:00 | INFO | M06 | github_actions=False
+2026-08-09 14:26:00 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:00 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:05 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:05 | INFO | M06 | project=M06
+2026-08-09 14:26:05 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:05 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:05 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:05 | INFO | M06 | shell=powershell
+2026-08-09 14:26:05 | INFO | M06 | cwd=.
+2026-08-09 14:26:05 | INFO | M06 | github_actions=False
+2026-08-09 14:26:05 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:05 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:37 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:37 | INFO | M06 | project=M06
+2026-08-09 14:26:37 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:37 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:37 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:37 | INFO | M06 | shell=powershell
+2026-08-09 14:26:37 | INFO | M06 | cwd=.
+2026-08-09 14:26:37 | INFO | M06 | github_actions=False
+2026-08-09 14:26:37 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:37 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:42 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:42 | INFO | M06 | project=M06
+2026-08-09 14:26:42 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:42 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:42 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:42 | INFO | M06 | shell=powershell
+2026-08-09 14:26:42 | INFO | M06 | cwd=.
+2026-08-09 14:26:42 | INFO | M06 | github_actions=False
+2026-08-09 14:26:42 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:42 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:47 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:47 | INFO | M06 | project=M06
+2026-08-09 14:26:47 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:47 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:47 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:47 | INFO | M06 | shell=powershell
+2026-08-09 14:26:47 | INFO | M06 | cwd=.
+2026-08-09 14:26:47 | INFO | M06 | github_actions=False
+2026-08-09 14:26:47 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:48 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:53 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:53 | INFO | M06 | project=M06
+2026-08-09 14:26:53 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:53 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:53 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:53 | INFO | M06 | shell=powershell
+2026-08-09 14:26:53 | INFO | M06 | cwd=.
+2026-08-09 14:26:53 | INFO | M06 | github_actions=False
+2026-08-09 14:26:53 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:53 | INFO | M06 | Model loaded successfully
+2026-08-09 14:26:58 | INFO | M06 | === RUN START ===
+2026-08-09 14:26:58 | INFO | M06 | project=M06
+2026-08-09 14:26:58 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:26:58 | INFO | M06 | python=3.14.3
+2026-08-09 14:26:58 | INFO | M06 | os=Windows 11
+2026-08-09 14:26:58 | INFO | M06 | shell=powershell
+2026-08-09 14:26:58 | INFO | M06 | cwd=.
+2026-08-09 14:26:58 | INFO | M06 | github_actions=False
+2026-08-09 14:26:58 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:26:58 | INFO | M06 | Model loaded successfully
+2026-08-09 14:27:15 | INFO | M06 | === RUN START ===
+2026-08-09 14:27:15 | INFO | M06 | project=M06
+2026-08-09 14:27:15 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:27:15 | INFO | M06 | python=3.14.3
+2026-08-09 14:27:15 | INFO | M06 | os=Windows 11
+2026-08-09 14:27:15 | INFO | M06 | shell=powershell
+2026-08-09 14:27:15 | INFO | M06 | cwd=.
+2026-08-09 14:27:15 | INFO | M06 | github_actions=False
+2026-08-09 14:27:15 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:27:15 | INFO | M06 | Model loaded successfully
+2026-08-09 14:27:21 | INFO | M06 | === RUN START ===
+2026-08-09 14:27:21 | INFO | M06 | project=M06
+2026-08-09 14:27:21 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:27:21 | INFO | M06 | python=3.14.3
+2026-08-09 14:27:21 | INFO | M06 | os=Windows 11
+2026-08-09 14:27:21 | INFO | M06 | shell=powershell
+2026-08-09 14:27:21 | INFO | M06 | cwd=.
+2026-08-09 14:27:21 | INFO | M06 | github_actions=False
+2026-08-09 14:27:21 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:27:21 | INFO | M06 | Model loaded successfully
+2026-08-09 14:27:26 | INFO | M06 | === RUN START ===
+2026-08-09 14:27:26 | INFO | M06 | project=M06
+2026-08-09 14:27:26 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:27:26 | INFO | M06 | python=3.14.3
+2026-08-09 14:27:26 | INFO | M06 | os=Windows 11
+2026-08-09 14:27:26 | INFO | M06 | shell=powershell
+2026-08-09 14:27:26 | INFO | M06 | cwd=.
+2026-08-09 14:27:26 | INFO | M06 | github_actions=False
+2026-08-09 14:27:26 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:27:26 | INFO | M06 | Model loaded successfully
+2026-08-09 14:27:31 | INFO | M06 | === RUN START ===
+2026-08-09 14:27:31 | INFO | M06 | project=M06
+2026-08-09 14:27:31 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:27:31 | INFO | M06 | python=3.14.3
+2026-08-09 14:27:31 | INFO | M06 | os=Windows 11
+2026-08-09 14:27:31 | INFO | M06 | shell=powershell
+2026-08-09 14:27:31 | INFO | M06 | cwd=.
+2026-08-09 14:27:31 | INFO | M06 | github_actions=False
+2026-08-09 14:27:31 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:27:31 | INFO | M06 | Model loaded successfully
+2026-08-09 14:27:37 | INFO | M06 | === RUN START ===
+2026-08-09 14:27:37 | INFO | M06 | project=M06
+2026-08-09 14:27:37 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:27:37 | INFO | M06 | python=3.14.3
+2026-08-09 14:27:37 | INFO | M06 | os=Windows 11
+2026-08-09 14:27:37 | INFO | M06 | shell=powershell
+2026-08-09 14:27:37 | INFO | M06 | cwd=.
+2026-08-09 14:27:37 | INFO | M06 | github_actions=False
+2026-08-09 14:27:37 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:27:37 | INFO | M06 | Model loaded successfully
+2026-08-09 14:27:45 | INFO | M06 | === RUN START ===
+2026-08-09 14:27:45 | INFO | M06 | project=M06
+2026-08-09 14:27:45 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:27:45 | INFO | M06 | python=3.14.3
+2026-08-09 14:27:45 | INFO | M06 | os=Windows 11
+2026-08-09 14:27:45 | INFO | M06 | shell=powershell
+2026-08-09 14:27:45 | INFO | M06 | cwd=.
+2026-08-09 14:27:45 | INFO | M06 | github_actions=False
+2026-08-09 14:27:45 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:27:45 | INFO | M06 | Model loaded successfully
+2026-08-09 14:29:55 | INFO | M06 | === RUN START ===
+2026-08-09 14:29:55 | INFO | M06 | project=M06
+2026-08-09 14:29:55 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:29:55 | INFO | M06 | python=3.14.3
+2026-08-09 14:29:55 | INFO | M06 | os=Windows 11
+2026-08-09 14:29:55 | INFO | M06 | shell=powershell
+2026-08-09 14:29:55 | INFO | M06 | cwd=.
+2026-08-09 14:29:55 | INFO | M06 | github_actions=False
+2026-08-09 14:29:55 | INFO | M06 | Load data.................
+2026-08-09 14:29:55 | INFO | M06 | Loading dataset: diabetes_data
+2026-08-09 14:29:55 | INFO | M06 | Loaded: 768 rows, 9 columns
+2026-08-09 14:29:55 | INFO | M06 | Model rows (after dropping missing): 768
+2026-08-09 14:29:55 | INFO | M06 | Split data................
+2026-08-09 14:29:55 | INFO | M06 | Train instances: 614
+2026-08-09 14:29:55 | INFO | M06 | Test instances:  154
+2026-08-09 14:29:55 | INFO | M06 | Train model...............
+2026-08-09 14:29:55 | INFO | M06 | Training RandomForestClassifier on 614 instances
+2026-08-09 14:29:56 | INFO | M06 | Training complete
+2026-08-09 14:29:56 | INFO | M06 | Evaluate model............
+2026-08-09 14:29:56 | INFO | M06 | Test accuracy: 0.721
+2026-08-09 14:29:56 | INFO | M06 | Save model................
+2026-08-09 14:29:56 | INFO | M06 | Saved model to: artifacts\model2.joblib
+2026-08-09 14:29:56 | INFO | M06 | Summarize.................
+2026-08-09 14:29:56 | INFO | M06 | ========================
+2026-08-09 14:29:56 | INFO | M06 | SUMMARY
+2026-08-09 14:29:56 | INFO | M06 | ========================
+2026-08-09 14:29:56 | INFO | M06 | Dataset:  diabetes_data
+2026-08-09 14:29:56 | INFO | M06 | Target:   diabetic
+2026-08-09 14:29:56 | INFO | M06 | Features: ['glucose', 'BMI', 'age']
+2026-08-09 14:29:56 | INFO | M06 | Artifact: artifacts\model2.joblib
+2026-08-09 14:29:56 | INFO | M06 | ========================
+2026-08-09 14:29:56 | INFO | M06 | ========================
+2026-08-09 14:29:56 | INFO | M06 | Executed successfully!
+2026-08-09 14:29:56 | INFO | M06 | ========================
+2026-08-09 14:30:38 | INFO | M06 | === RUN START ===
+2026-08-09 14:30:38 | INFO | M06 | project=M06
+2026-08-09 14:30:38 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:30:38 | INFO | M06 | python=3.14.3
+2026-08-09 14:30:38 | INFO | M06 | os=Windows 11
+2026-08-09 14:30:38 | INFO | M06 | shell=powershell
+2026-08-09 14:30:38 | INFO | M06 | cwd=.
+2026-08-09 14:30:38 | INFO | M06 | github_actions=False
+2026-08-09 14:30:38 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:30:38 | INFO | M06 | Model loaded successfully
+2026-08-09 14:30:43 | INFO | M06 | === RUN START ===
+2026-08-09 14:30:43 | INFO | M06 | project=M06
+2026-08-09 14:30:43 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:30:43 | INFO | M06 | python=3.14.3
+2026-08-09 14:30:43 | INFO | M06 | os=Windows 11
+2026-08-09 14:30:43 | INFO | M06 | shell=powershell
+2026-08-09 14:30:43 | INFO | M06 | cwd=.
+2026-08-09 14:30:43 | INFO | M06 | github_actions=False
+2026-08-09 14:30:43 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:30:43 | INFO | M06 | Model loaded successfully
+2026-08-09 14:38:12 | WARNING | M06 | Extremely high BMI
+2026-08-09 14:39:08 | WARNING | M06 | At risk for hypoglycemia
+2026-08-09 14:47:10 | INFO | M06 | === RUN START ===
+2026-08-09 14:47:10 | INFO | M06 | project=M06
+2026-08-09 14:47:10 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:47:10 | INFO | M06 | python=3.14.3
+2026-08-09 14:47:10 | INFO | M06 | os=Windows 11
+2026-08-09 14:47:10 | INFO | M06 | shell=powershell
+2026-08-09 14:47:10 | INFO | M06 | cwd=.
+2026-08-09 14:47:10 | INFO | M06 | github_actions=False
+2026-08-09 14:47:10 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:47:10 | INFO | M06 | Model loaded successfully
+2026-08-09 14:47:15 | INFO | M06 | === RUN START ===
+2026-08-09 14:47:15 | INFO | M06 | project=M06
+2026-08-09 14:47:15 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:47:15 | INFO | M06 | python=3.14.3
+2026-08-09 14:47:15 | INFO | M06 | os=Windows 11
+2026-08-09 14:47:15 | INFO | M06 | shell=powershell
+2026-08-09 14:47:15 | INFO | M06 | cwd=.
+2026-08-09 14:47:15 | INFO | M06 | github_actions=False
+2026-08-09 14:47:15 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:47:15 | INFO | M06 | Model loaded successfully
+2026-08-09 14:48:15 | INFO | M06 | === RUN START ===
+2026-08-09 14:48:15 | INFO | M06 | project=M06
+2026-08-09 14:48:15 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:48:15 | INFO | M06 | python=3.14.3
+2026-08-09 14:48:15 | INFO | M06 | os=Windows 11
+2026-08-09 14:48:15 | INFO | M06 | shell=powershell
+2026-08-09 14:48:15 | INFO | M06 | cwd=.
+2026-08-09 14:48:15 | INFO | M06 | github_actions=False
+2026-08-09 14:48:15 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:48:15 | INFO | M06 | Model loaded successfully
+2026-08-09 14:48:21 | INFO | M06 | === RUN START ===
+2026-08-09 14:48:21 | INFO | M06 | project=M06
+2026-08-09 14:48:21 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:48:21 | INFO | M06 | python=3.14.3
+2026-08-09 14:48:21 | INFO | M06 | os=Windows 11
+2026-08-09 14:48:21 | INFO | M06 | shell=powershell
+2026-08-09 14:48:21 | INFO | M06 | cwd=.
+2026-08-09 14:48:21 | INFO | M06 | github_actions=False
+2026-08-09 14:48:21 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:48:22 | INFO | M06 | Model loaded successfully
+2026-08-09 14:48:49 | INFO | M06 | === RUN START ===
+2026-08-09 14:48:49 | INFO | M06 | project=M06
+2026-08-09 14:48:49 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:48:49 | INFO | M06 | python=3.14.3
+2026-08-09 14:48:49 | INFO | M06 | os=Windows 11
+2026-08-09 14:48:49 | INFO | M06 | shell=powershell
+2026-08-09 14:48:49 | INFO | M06 | cwd=.
+2026-08-09 14:48:49 | INFO | M06 | github_actions=False
+2026-08-09 14:48:49 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:48:49 | INFO | M06 | Model loaded successfully
+2026-08-09 14:48:54 | INFO | M06 | === RUN START ===
+2026-08-09 14:48:54 | INFO | M06 | project=M06
+2026-08-09 14:48:54 | INFO | M06 | repo_dir=ml-06-serving
+2026-08-09 14:48:54 | INFO | M06 | python=3.14.3
+2026-08-09 14:48:54 | INFO | M06 | os=Windows 11
+2026-08-09 14:48:54 | INFO | M06 | shell=powershell
+2026-08-09 14:48:54 | INFO | M06 | cwd=.
+2026-08-09 14:48:54 | INFO | M06 | github_actions=False
+2026-08-09 14:48:54 | INFO | M06 | Loading model from: artifacts\model2.joblib
+2026-08-09 14:48:54 | INFO | M06 | Model loaded successfully
+2026-08-09 14:49:14 | WARNING | M06 | At risk for hypoglycemia
+2026-08-09 14:50:06 | WARNING | M06 | Extremely low BMI
+2026-08-09 14:50:36 | WARNING | M06 | Extremely high BMI
