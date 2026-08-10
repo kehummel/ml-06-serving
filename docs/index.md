@@ -20,7 +20,7 @@ I tested the technical change with two different keys and they both returned a g
 This was an easy change and it only required me to change a few lines in the code.
 It was simple and allowed me to better understand the code and what was happening in the project.
 
-![Phase 4 Test](./docs/images/06_P4_output.png)
+![Phase 4 Test](./images/06_P4_output.png)
 
 ## Phase 5. Custom Project
 
@@ -46,9 +46,9 @@ I was initially going to include the diabetes pedigree function as an important 
 
 [ml_06_important_features.ipynb](project06/ml_06_important_features.ipynb)
 
-![Test Accuracy Per Model](./docs/images/06_P4_test_accuracy.png)
+![Test Accuracy Per Model](./images/06_P4_test_accuracy.png)
 
-![Most Important Features](./docs/images/06_P4_important_features.png)
+![Most Important Features](./images/06_P4_important_features.png)
 
 ### Example Model and Serving Approach
 
@@ -84,9 +84,9 @@ I verified it worked by creating multiple requests and testing them on the syste
 
 Results from practice requests:
 
-![Testing Results 1](./docs/images/06_P5_testing1.png)
+![Testing Results 1](./images/06_P5_testing1.png)
 
-![Testing Results 2](./docs/images/06_P5_testing2.png)
+![Testing Results 2](./images/06_P5_testing2.png)
 
 ### Summary
 

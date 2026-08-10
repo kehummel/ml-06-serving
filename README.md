@@ -122,6 +122,7 @@ Should return the predicted result as JSON data:
 ```json
 { "prediction": "male" }
 ```
+A second example is:
 
 ```shell
 curl -X POST http://127.0.0.1:8000/predict `
@@ -194,7 +195,7 @@ Additional project instructions, terms, and notes:
 
 [docs/index.md](docs/index.md)
 
-### Phase 4 Documentation
+## Phase 4 Documentation
 
 Run 1st to train the model and save it to artifacts/model.joblib
 
@@ -208,7 +209,7 @@ Notebook for Phase 4
 
 [ml_06_serve_model_hummel.ipynb](notebooks/ml_06_serve_model_hummel.ipynb)
 
-### Phase 5 Documentation
+## Phase 5 Documentation
 
 Run 1st to train the model and save it to artifacts/model2.joblib
 
