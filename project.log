@@ -2779,3 +2779,47 @@ Name: count, dtype: int64
 2026-08-09 14:49:14 | WARNING | M06 | At risk for hypoglycemia
 2026-08-09 14:50:06 | WARNING | M06 | Extremely low BMI
 2026-08-09 14:50:36 | WARNING | M06 | Extremely high BMI
+2026-08-09 21:21:12 | INFO | M05 | === RUN START ===
+2026-08-09 21:21:12 | INFO | M05 | project=M05
+2026-08-09 21:21:12 | INFO | M05 | repo_dir=ml-06-serving
+2026-08-09 21:21:12 | INFO | M05 | python=3.14.3
+2026-08-09 21:21:12 | INFO | M05 | os=Windows 11
+2026-08-09 21:21:12 | INFO | M05 | shell=powershell
+2026-08-09 21:21:12 | INFO | M05 | cwd=project06
+2026-08-09 21:21:12 | INFO | M05 | github_actions=False
+2026-08-09 21:21:12 | INFO | M05 | Confirming installation:
+2026-08-09 21:21:12 | INFO | M05 |   python:       3.14.3
+2026-08-09 21:21:12 | INFO | M05 |   pandas:       3.0.5
+2026-08-09 21:21:12 | INFO | M05 |   numpy:        2.5.1
+2026-08-09 21:21:12 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-09 21:21:12 | INFO | M05 |   seaborn:      0.13.2
+2026-08-09 21:21:12 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-09 21:21:12 | INFO | M05 | Loading dataset: diabetes_data.csv
+2026-08-09 21:21:12 | INFO | M05 | Loaded: 768 rows (instances), 9 columns
+2026-08-09 21:21:12 | INFO | M05 | Original rows: 768
+2026-08-09 21:21:12 | INFO | M05 | Model rows:    768
+2026-08-09 21:21:12 | INFO | M05 | Classes in target 'outcome': [np.int64(0), np.int64(1)]
+2026-08-09 21:21:12 | DEBUG | M05 | Class counts:
+outcome
+0    500
+1    268
+Name: count, dtype: int64
+2026-08-09 21:21:12 | INFO | M05 | Train instances: 614
+2026-08-09 21:21:12 | INFO | M05 | Test instances: 154
+2026-08-09 21:21:12 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-09 21:21:12 | DEBUG | M05 |   fitted: single_tree
+2026-08-09 21:21:13 | DEBUG | M05 |   fitted: random_forest
+2026-08-09 21:21:13 | DEBUG | M05 |   fitted: voting classifier
+2026-08-09 21:21:13 | INFO | M05 |   single_tree        test accuracy = 0.695
+2026-08-09 21:21:13 | INFO | M05 |   random_forest      test accuracy = 0.760
+2026-08-09 21:21:13 | INFO | M05 |   voting_classifier  test accuracy = 0.740
+2026-08-09 21:21:14 | INFO | M05 | Best model: random_forest with test accuracy = 0.760
+2026-08-09 21:21:14 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-09 21:21:14 | INFO | M05 |   glucose              0.267
+2026-08-09 21:21:14 | INFO | M05 |   BMI                  0.162
+2026-08-09 21:21:14 | INFO | M05 |   age                  0.131
+2026-08-09 21:21:14 | INFO | M05 |   diabetes_pedigree_function 0.127
+2026-08-09 21:21:14 | INFO | M05 |   blood_pressure       0.086
+2026-08-09 21:21:14 | INFO | M05 |   pregnancies          0.084
+2026-08-09 21:21:14 | INFO | M05 |   insulin              0.073
+2026-08-09 21:21:14 | INFO | M05 |   skin_thickness       0.069
