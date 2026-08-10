@@ -46,6 +46,10 @@ I was initially going to include the diabetes pedigree function as an important 
 
 [ml_06_important_features.ipynb](project06/ml_06_important_features.ipynb)
 
+![Test Accuracy Per Model](./docs/images/06_P4_test_accuracy.png)
+
+![Most Important Features](./docs/images/06_P4_important_features.png)
+
 ### Example Model and Serving Approach
 
 The model predicts whether or not a person has diabetes based on the inputs of glucose level, BMI, and age.
